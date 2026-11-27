@@ -1,0 +1,737 @@
+#!/usr/bin/env python3
+"""Filament Prices TR - hourly collector.
+
+Finds the watchlist filament on Turkish store sites (through each store's
+sitemap or product feed), reads price and stock status from every product
+page and writes docs/data/prices.json for the web app.
+
+The watchlist is base-model PLA and PETG, 1 kg, black or white, from seven
+brands. Specialty lines (PLA+, Silk, Matte, CF, Hyper, HS, Rapid and the
+rest) are deliberately left out.
+
+Standard library only, so it runs on a bare GitHub Actions runner.
+
+    python collector/collect.py                 # full run
+    python collector/collect.py --only robo90   # one store, for testing
+    python collector/collect.py --probe         # test stores, write nothing
+"""
+from __future__ import annotations
+
+import argparse
+import concurrent.futures as cf
+import datetime as dt
+import gzip
+import html
+import json
+import os
+import re
+import sys
+import time
+import unicodedata
+import urllib.error
+import urllib.parse
+import urllib.request
+from pathlib import Path
+
+ROOT = Path(__file__).resolve().parent.parent
+STORES_FILE = Path(__file__).resolve().parent / "stores.json"
+OUT_FILE = ROOT / "docs" / "data" / "prices.json"
+CACHE_FILE = Path(__file__).resolve().parent / "known_urls.json"
+
+UA = ("Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 "
+      "(KHTML, like Gecko) Chrome/140.0 Safari/537.36")
+TIMEOUT = 25
+DELAY = 0.6              # pause between two requests to the same store
+MAX_PRODUCTS = 400       # product pages read per store per run
+MAX_SITEMAPS = 400       # child sitemaps read per store
+REDISCOVER_HOURS = 6     # how often sitemaps are re-read for new listings
+KEEP_STALE_DAYS = 14     # unreadable offers are kept (marked old) this long
+
+# --------------------------------------------------------------------------
+# Watchlist
+# --------------------------------------------------------------------------
+# Brands, in the order they appear in the app.
+BRANDS = [
+    ("eSUN", r"\besun\b"),
+    ("Elegoo", r"\belegoo\b"),
+    ("Sunlu", r"\bsunlu\b"),
+    ("Yousu", r"\byousu\b"),
+    ("Porima", r"\bporima\b"),
+    ("Creality", r"\bcreality\b"),
+    ("Bambu Lab", r"\bbambu\b"),
+]
+BRAND_ORDER = [b for b, _ in BRANDS]
+# PETG is tested first so a page naming both lands on the right one.
+MATERIALS = [("PETG", r"\bpetg\b"), ("PLA", r"\bpla\b")]
+# Off-white shades (ivory, bone, jade, cold white) count as white; the row
+# always shows the store's own wording underneath.
+COLOURS = [("Black", r"\b(siyah|black|onyx)\b"),
+           ("White", r"\b(beyaz|white)\b")]
+
+FLOOR, CEILING = 250, 2600       # what one 1 kg spool can plausibly cost, in TL
+
+# Product URLs worth opening: a material and a colour in the path.
+URL_RE = re.compile(r"^(?=.*\b(pla|petg)\b)(?=.*\b(siyah|beyaz|black|white)\b)")
+# Things made *for* filament rather than filament itself.
+ACCESSORY_RE = re.compile(
+    r"\b(kurutucu|dryer|kurutma|saklama|kutu|kutusu|box|dolap|cabinet|"
+    r"tutacagi|tutacak|holder|raf|rack|reel|bobin|makara\s*(tutucu|standi)|"
+    r"sensor|detector|dedektor|kit|nozzle|nozul|kalem|pen|temizleyici|"
+    r"cleaner|filtre|filter|vakum|vacuum|etiket|label|yazici|printer|"
+    r"hediyeli|canta|bag|aparat|adapter|adaptor|klips|clip|claw|kilavuz|"
+    r"guide|kesici|cutter|makas|baski|tabla|plate|yedek\s*parca|aksesuar)\b")
+# Specialty lines: the watchlist is the plain base product only.
+NOT_BASE_RE = re.compile(
+    r"\b(plus|pro|matte|mat|silk|ipek|cf|gf|carbon|karbon|fiber|fibre|"
+    r"cam|glass|wood|ahsap|metal|metalik|marble|mermer|glow|luminous|"
+    r"rainbow|gokkusagi|gradient|degrade|dual|tri|multi|pastel|neon|"
+    r"fosfor|sparkle|simli|galaxy|starlight|hs|hyper|rapid|tough|flex|"
+    r"soft|aero|lw|magic|support|destek|pva|tpu|abs|asa|pctg|hips|nylon|"
+    r"naylon|pa6|pc|wash|yuksek\s*hiz(li)?|high\s*speed)\b")
+# More than one spool in the box.
+MULTIPACK_RE = re.compile(
+    r"\b(\d+\s*(adet|li|lu|lı|lü|x|pack|pcs|paket|renk)|koli|bundle|set|"
+    r"kampanya|avantaj|firsat)\b")
+# Any stated weight that is not 1 kg.
+NOT_1KG_RE = re.compile(
+    r"\b(0\s*(25|5|75)\s*kg|(100|200|250|300|500|750|800)\s*gr?|"
+    r"(2|3|4|5|8|10)\s*kg|mini)\b")
+REFILL_RE = re.compile(
+    r"\b(refill|refil|makarasiz|spoolless|no\s*spool|without\s*spool)\b")
+SKIP_SITEMAP_RE = re.compile(
+    r"(image|img|resim|blog|kategori|categor|brand|marka|tag|etiket|"
+    r"author|yazar|post|page|sayfa|news|haber|video|collection|static)",
+    re.I)
+
+
+def fold(text: str) -> str:
+    """Lower-case, strip Turkish accents and punctuation."""
+    text = (text or "").replace("İ", "i").replace("I", "i").replace("ı", "i")
+    text = unicodedata.normalize("NFKD", text.lower())
+    text = "".join(c for c in text if not unicodedata.combining(c))
+    return re.sub(r"[^a-z0-9]+", " ", text).strip()
+
+
+def classify(name: str, price: float | None):
+    """Return (brand, material, colour) for a watchlist spool, else None."""
+    # fold() drops the "+", so PLA+ / ePLA+ must be caught on the raw name.
+    squashed = re.sub(r"\s+", "", (name or "").lower())
+    if "pla+" in squashed or "petg+" in squashed:
+        return None
+    f = fold(name)
+    material = next((m for m, rx in MATERIALS if re.search(rx, f)), None)
+    brand = next((b for b, rx in BRANDS if re.search(rx, f)), None)
+    if not material or not brand:
+        return None
+    if (ACCESSORY_RE.search(f) or NOT_BASE_RE.search(f)
+            or MULTIPACK_RE.search(f) or NOT_1KG_RE.search(f)):
+        return None
+    colour = next((c for c, rx in COLOURS if re.search(rx, f)), None)
+    if not colour:
+        return None
+    if price is not None and not FLOOR <= price <= CEILING:
+        return None
+    return brand, material, colour + (" refill" if REFILL_RE.search(f) else "")
+
+
+# --------------------------------------------------------------------------
+# HTTP
+# --------------------------------------------------------------------------
+class Blocked(Exception):
+    pass
+
+
+def fetch(url: str, accept: str = "text/html,application/xhtml+xml,*/*;q=0.8") -> str:
+    req = urllib.request.Request(url, headers={
+        "User-Agent": UA,
+        "Accept": accept,
+        "Accept-Language": "tr-TR,tr;q=0.9,en;q=0.8",
+        "Accept-Encoding": "gzip",
+    })
+    for attempt in range(3):
+        try:
+            with urllib.request.urlopen(req, timeout=TIMEOUT) as resp:
+                raw = resp.read()
+            break
+        except urllib.error.HTTPError as e:
+            if e.code == 429 and attempt < 2:      # asked to slow down
+                wait = e.headers.get("Retry-After", "")
+                time.sleep(min(int(wait), 60) if wait.isdigit() else 8 * (attempt + 1))
+                continue
+            if e.code in (401, 403, 429, 503):
+                raise Blocked(f"HTTP {e.code}") from None
+            raise
+    if raw[:2] == b"\x1f\x8b":
+        raw = gzip.decompress(raw)
+    text = raw.decode("utf-8", errors="replace")
+    head = text[:3000].lower()
+    if ("attention required" in head or "just a moment" in head
+            or "captcha" in head or "access denied" in head
+            or "güvenlik doğrulaması" in head):
+        raise Blocked("bot check page")
+    return text
+
+
+# --------------------------------------------------------------------------
+# Discovery
+# --------------------------------------------------------------------------
+LOC_RE = re.compile(r"<loc>\s*(?:<!\[CDATA\[)?\s*(.*?)\s*(?:\]\]>)?\s*</loc>", re.S)
+
+
+def url_matches(url: str) -> bool:
+    path = urllib.parse.unquote(urllib.parse.urlsplit(url).path).lower()
+    return bool(URL_RE.search(fold(path).replace(" ", "-")))
+
+
+def discover_sitemap(store: dict, log: list) -> list[str]:
+    base = store["base"].rstrip("/")
+    starts = store.get("sitemaps")
+    if not starts:
+        starts = []
+        try:
+            robots = fetch(base + "/robots.txt", "text/plain,*/*")
+            starts = [m.strip() for m in
+                      re.findall(r"(?im)^sitemap:\s*(\S+)", robots)]
+        except Exception:
+            pass
+        starts = [s if s.startswith("http") else base + "/" + s.lstrip("/")
+                  for s in starts] or [base + "/sitemap.xml"]
+    seen, queue, found, read_ok = set(), list(dict.fromkeys(starts)), [], 0
+    bad_run = 0
+    while queue and len(seen) < MAX_SITEMAPS:
+        sm = queue.pop(0)
+        if sm in seen:
+            continue
+        seen.add(sm)
+        try:
+            xml = fetch(sm, "application/xml,text/xml,*/*")
+        except Exception as e:  # noqa: BLE001
+            log.append(f"sitemap {sm}: {e}")
+            bad_run += 1
+            if bad_run >= 3:             # store is refusing: stop asking
+                log.append("sitemap crawl stopped after 3 failures in a row")
+                break
+            time.sleep(DELAY)
+            continue
+        read_ok, bad_run = read_ok + 1, 0
+        time.sleep(DELAY / 2)
+        locs = [html.unescape(x) for x in LOC_RE.findall(xml)]
+        if "<sitemapindex" in xml[:2000].lower():
+            for loc in locs:
+                if not SKIP_SITEMAP_RE.search(urllib.parse.urlsplit(loc).path):
+                    queue.append(loc)
+        else:
+            found += [u for u in locs if url_matches(u)]
+    if not read_ok:
+        raise Blocked("product list (sitemap) could not be read")
+    return list(dict.fromkeys(found))
+
+
+SEARCH_TERMS = ["bambu lab h2d", "bambu lab h2s", "bambu lab h2c",
+                "bambu lab p1s", "bambu lab p2s", "bambu lab x2d",
+                "bambu lab a2l", "creality k2 plus", "creality ender 5 max",
+                "elegoo centauri carbon 2", "elegoo saturn 4 ultra 16k"]
+
+
+def discover_search(store: dict, log: list) -> list[str]:
+    base = store["base"].rstrip("/")
+    link_re = re.compile(store.get("link_re", r'href="([^"#?]+)'))
+    found = []
+    for term in SEARCH_TERMS:
+        url = store["search"].replace("{q}", urllib.parse.quote_plus(term))
+        try:
+            page = fetch(url)
+        except Blocked:
+            raise
+        except Exception as e:  # noqa: BLE001
+            log.append(f"search {term}: {e}")
+            continue
+        time.sleep(DELAY)
+        for href in link_re.findall(page):
+            href = html.unescape(href)
+            full = urllib.parse.urljoin(base + "/", href)
+            if full.startswith(base) and url_matches(full):
+                found.append(full.split("?")[0])
+    return list(dict.fromkeys(found))
+
+
+# --------------------------------------------------------------------------
+# Product page
+# --------------------------------------------------------------------------
+LD_RE = re.compile(
+    r"<script[^>]*application/ld\+json[^>]*>(.*?)</script>", re.S | re.I)
+PREORDER_RE = re.compile(r"on\s*siparis|pre\s*order|preorder|on\s*satis")
+
+
+def to_price(v) -> float | None:
+    if v is None:
+        return None
+    if isinstance(v, (int, float)):
+        return float(v) or None
+    s = re.sub(r"[^\d.,]", "", str(v))
+    if not s:
+        return None
+    if "," in s and "." in s:           # 1.234,56 or 1,234.56
+        if s.rfind(",") > s.rfind("."):
+            s = s.replace(".", "").replace(",", ".")
+        else:
+            s = s.replace(",", "")
+    elif "," in s:
+        s = s.replace(",", ".") if re.search(r",\d{1,2}$", s) else s.replace(",", "")
+    elif s.count(".") > 1 or re.search(r"\.\d{3}$", s):
+        s = s.replace(".", "")
+    try:
+        return float(s) or None
+    except ValueError:
+        return None
+
+
+def iter_ld(page: str):
+    for block in LD_RE.findall(page):
+        try:
+            data = json.loads(block.strip(), strict=False)
+        except ValueError:
+            continue
+        stack = [data]
+        while stack:
+            node = stack.pop()
+            if isinstance(node, list):
+                stack.extend(node)
+            elif isinstance(node, dict):
+                yield node
+                if "@graph" in node:
+                    stack.append(node["@graph"])
+
+
+MICRO = {
+    "name": re.compile(r"itemprop=[\"']name[\"'][^>]*>\s*([^<]{3,200})<"),
+    "price": re.compile(r"itemprop=[\"']price[\"'][^>]*content=[\"']([\d.,]+)"),
+    "avail": re.compile(r"itemprop=[\"']availability[\"'][^>]*(?:href|content)=[\"']([^\"']+)"),
+}
+TICIMAX_STOCK = re.compile(
+    r'"stokKodu":"[^"]*","barkod":"[^"]*"[^{}]{0,120}?"stokAdedi":([\d.]+)')
+
+
+def status_from(avail: str) -> str:
+    avail = (avail or "").lower()
+    if "preorder" in avail or "presale" in avail or "backorder" in avail:
+        return "pre_order"
+    if "outofstock" in avail or "soldout" in avail or "discontinued" in avail:
+        return "out_of_stock"
+    if "instock" in avail or "limitedavailability" in avail or "onlineonly" in avail:
+        return "in_stock"
+    return "unknown"
+
+
+def parse_product(page: str, store: dict) -> dict | None:
+    """name / price / status from a product page (schema.org data)."""
+    p = parse_ld(page) or parse_micro(page)
+    if not p:
+        return None
+    if store.get("price_re"):            # e.g. store publishes prices ex-VAT
+        m = re.search(store["price_re"], page, re.S)
+        if m:         # no match: the page has no separate ex-VAT and gross
+            p["price"] = to_price(m.group(1))   # price, so keep the structured one
+    if p["status"] == "unknown":
+        m = TICIMAX_STOCK.search(page)
+        if m:
+            p["status"] = "in_stock" if float(m.group(1)) > 0 else "out_of_stock"
+    p["note"] = ""
+    if any(re.search(m, page) for m in store.get("instock_markers", [])):
+        if p["status"] != "out_of_stock":
+            p["status"] = "in_stock"
+    elif is_preorder(p["name"], page, store):
+        if p["status"] == "out_of_stock":
+            p["note"] = "Store page mentions pre-order, but it cannot be ordered now."
+        else:
+            p["status"] = "pre_order"
+    return p
+
+
+def parse_micro(page: str) -> dict | None:
+    name, price = MICRO["name"].search(page), MICRO["price"].search(page)
+    if not name or not price:
+        return None
+    avail = MICRO["avail"].search(page)
+    return {"name": html.unescape(name.group(1)).strip(),
+            "price": to_price(price.group(1)),
+            "status": status_from(avail.group(1) if avail else ""), "seller": ""}
+
+
+def parse_ld(page: str) -> dict | None:
+    for node in iter_ld(page):
+        types = node.get("@type")
+        types = types if isinstance(types, list) else [types]
+        if "Product" not in types:
+            continue
+        offers = node.get("offers")
+        offers = offers if isinstance(offers, list) else [offers]
+        offers = [o for o in offers if isinstance(o, dict)]
+        if not offers:
+            continue
+        o = offers[0]
+        price = to_price(o.get("price") or o.get("lowPrice"))
+        if price is None and isinstance(o.get("priceSpecification"), dict):
+            price = to_price(o["priceSpecification"].get("price"))
+        name = html.unescape(str(node.get("name") or "")).strip()
+        seller = o.get("seller") if isinstance(o.get("seller"), dict) else {}
+        status = status_from(str(o.get("availability") or ""))
+        return {"name": name, "price": price, "status": status,
+                "seller": str(seller.get("name") or "")}
+    return None
+
+
+# Sentences stores write on the product itself (not menu or badge text).
+PREORDER_PAGE_RE = re.compile(
+    r"on siparis urunudur|on siparis ile satisa|on siparis kapsaminda|"
+    r"sadece on siparise|on siparis asamasinda|on sipariste")
+STRIP_RE = re.compile(r"(?s)<(script|style|template)[^>]*>.*?</\1>")
+
+
+def is_preorder(name: str, page: str, store: dict) -> bool:
+    if PREORDER_RE.search(fold(name)):
+        return True
+    if any(re.search(m, page) for m in store.get("preorder_markers", [])):
+        return True
+    return bool(PREORDER_PAGE_RE.search(fold(STRIP_RE.sub(" ", page))))
+
+
+def run_shopify(store: dict, now: str, log: list) -> list[dict]:
+    """Shopify stores publish their whole catalogue as JSON: a few requests."""
+    base, offers = store["base"].rstrip("/"), []
+    for page_no in range(1, 30):
+        data = json.loads(fetch(f"{base}/products.json?limit=250&page={page_no}",
+                                "application/json"))
+        products = data.get("products", [])
+        if page_no == 1 and not products:
+            raise ValueError("empty product catalogue")
+        for prod in products:
+            variants = prod.get("variants") or []
+            if not variants:
+                continue
+            live = [v for v in variants if v.get("available")]
+            price = min(to_price(v.get("price")) or 9e12 for v in (live or variants))
+            cls = classify(prod.get("title", ""), price)
+            if not cls:
+                continue
+            tags = fold(" ".join(prod.get("tags") or []))
+            if "yedekparca" in tags.replace(" ", "") or "aksesuar" in tags:
+                continue
+            status = "in_stock" if live else "out_of_stock"
+            if live and PREORDER_RE.search(fold(prod["title"]) + " " + tags):
+                status = "pre_order"
+            offers.append({
+                "brand": cls[0], "model": cls[1], "variant": cls[2],
+                "store": store["name"], "store_id": store["id"], "seller": "",
+                "title": prod["title"].strip(),
+                "url": f"{base}/products/{prod['handle']}",
+                "price_try": round(price, 2), "status": status, "note": "",
+                "checked_at": now, "stale": False})
+        if len(products) < 250:
+            break
+        time.sleep(2)
+    return offers
+
+
+# --------------------------------------------------------------------------
+# One store
+# --------------------------------------------------------------------------
+def run_store(store: dict, known: dict, now: str, rediscover: bool) -> dict:
+    log: list[str] = []
+    sid = store["id"]
+    urls = list(known.get(sid, {}).get("urls", []))
+    skip = set(known.get(sid, {}).get("skip", []))
+    result = {"id": sid, "name": store["name"], "offers": [], "ok": False,
+              "skip": skip,
+              "reason": "", "log": log, "urls": urls, "failed": set(),
+              "discovered_at": known.get(sid, {}).get("discovered_at")}
+    try:
+        if store.get("platform") == "shopify":
+            result["offers"] = dedupe(run_shopify(store, now, log))
+            result["ok"] = True
+            return result
+        if rediscover or not urls:
+            fresh = (discover_search if store.get("search") else discover_sitemap)(store, log)
+            # An incomplete crawl (a sitemap or search failed, or nothing came
+            # back) must not forget listings we already know: keep them too.
+            partial = not fresh or any(
+                line.startswith(("sitemap ", "search ")) for line in log)
+            urls = [u for u in dict.fromkeys(
+                        fresh + store.get("extra_urls", []) + (urls if partial else []))
+                    if u not in skip]
+            result["urls"], result["discovered_at"] = urls, now
+        read, gone = 0, set()
+        for url in urls[:MAX_PRODUCTS]:
+            try:
+                page = fetch(url)
+            except Blocked:
+                raise
+            except Exception as e:  # noqa: BLE001
+                log.append(f"{url}: {e}")
+                if isinstance(e, urllib.error.HTTPError) and e.code in (404, 410):
+                    gone.add(url)        # page removed: forget it
+                    read += 1            # the store did answer
+                else:
+                    result["failed"].add(url)
+                continue
+            finally:
+                time.sleep(DELAY)
+            read += 1
+            p = parse_product(page, store)
+            if not p or not p["name"]:
+                continue
+            if not classify(p["name"], None):
+                skip.add(url)            # a part or another model: never a printer
+                continue
+            if p["price"] is None:
+                result["failed"].add(url)    # printer page without a price:
+                continue                     # keep the last known offer as old
+            cls = classify(p["name"], p["price"])
+            if not cls:
+                continue
+            result["offers"].append({
+                "brand": cls[0], "model": cls[1], "variant": cls[2],
+                "store": store["name"], "store_id": sid,
+                "seller": p["seller"] if store.get("marketplace") else "",
+                "title": p["name"], "url": url, "price_try": round(p["price"], 2),
+                "status": p["status"], "note": p.get("note", ""),
+                "checked_at": now, "stale": False,
+            })
+        result["urls"] = [u for u in urls if u not in skip and u not in gone]
+        result["ok"] = read > 0 or not urls
+        if not urls:
+            result["reason"] = "no watchlist filament listed"
+        elif read == 0:
+            result["reason"] = "product pages could not be read"
+    except Blocked as e:
+        result["reason"] = f"refuses automated reading ({e})"
+    except Exception as e:  # noqa: BLE001
+        result["reason"] = f"error: {e}"
+    result["offers"] = dedupe(result["offers"])
+    return result
+
+
+def dedupe(offers: list[dict]) -> list[dict]:
+    """Drop language duplicates (same store, same version, same price)."""
+    best: dict[tuple, dict] = {}
+    for o in offers:
+        key = (o["model"], o["variant"], o["price_try"], o["status"])
+        cur = best.get(key)
+        if cur is None or (re.search(r"-en(-\d+)?$", cur["url"])
+                           and not re.search(r"-en(-\d+)?$", o["url"])):
+            best[key] = o
+    kept = list(best.values())
+    # An English copy of a page can be worded differently and land in another
+    # version: drop it when the store's own-language page has the same model,
+    # price and status.
+    en = re.compile(r"-en(-\d+)?$")
+    native = {(o["model"], o["price_try"], o["status"])
+              for o in kept if not en.search(o["url"])}
+    return [o for o in kept if not (
+        en.search(o["url"])
+        and (o["model"], o["price_try"], o["status"]) in native)]
+
+
+# --------------------------------------------------------------------------
+# Exchange rate
+# --------------------------------------------------------------------------
+def usd_try(prev_rate: float | None = None) -> dict | None:
+    sources = [
+        ("Truncgil Finans", "https://finans.truncgil.com/v4/today.json",
+         lambda d: ((float(d["USD"]["Buying"]) + float(d["USD"]["Selling"])) / 2,
+                    dt.datetime.now(dt.timezone.utc).isoformat(timespec="seconds"))),
+        ("Yahoo Finance",
+         "https://query1.finance.yahoo.com/v8/finance/chart/USDTRY=X?interval=1m&range=1d",
+         lambda d: (d["chart"]["result"][0]["meta"]["regularMarketPrice"],
+                    dt.datetime.fromtimestamp(
+                        d["chart"]["result"][0]["meta"]["regularMarketTime"],
+                        dt.timezone.utc).isoformat(timespec="seconds"))),
+        ("open.er-api.com", "https://open.er-api.com/v6/latest/USD",
+         lambda d: (d["rates"]["TRY"],
+                    dt.datetime.fromtimestamp(
+                        d["time_last_update_unix"],
+                        dt.timezone.utc).isoformat(timespec="seconds"))),
+    ]
+    doubtful = None
+    for name, url, pick in sources:
+        try:
+            text = fetch(url, "application/json")
+            try:
+                data = json.loads(text)
+            except ValueError:       # feed is sometimes not strictly valid
+                usd = re.search(r'"USD"\s*:\s*(\{[^}]*\})', text)
+                data = {"USD": json.loads(usd.group(1))}
+            rate, at = pick(data)
+            rate = float(rate)
+            if not 1 < rate < 1000:
+                raise ValueError(f"rate {rate} out of range")
+            got = {"usd_try": round(rate, 4), "source": name, "at": at}
+            if prev_rate and not 0.75 < rate / prev_rate < 1.33:
+                # far from the last rate: only believe it if no other source works
+                print(f"rate source {name}: {rate} far from {prev_rate}", file=sys.stderr)
+                doubtful = doubtful or got
+                continue
+            return got
+        except Exception as e:  # noqa: BLE001
+            print(f"rate source {name} failed: {e}", file=sys.stderr)
+    return doubtful
+
+
+# --------------------------------------------------------------------------
+# Main
+# --------------------------------------------------------------------------
+def load_json(path: Path, default):
+    try:
+        return json.loads(path.read_text(encoding="utf-8"))
+    except FileNotFoundError:
+        return default
+    except (OSError, ValueError) as e:
+        print(f"could not read {path.name}: {e}", file=sys.stderr)
+        return default
+
+
+def write_json(path: Path, data) -> None:
+    # Write through a temp file so a crash never leaves a half-written file.
+    text = json.dumps(data, ensure_ascii=False, indent=1)
+    tmp = path.with_name(path.name + ".tmp")
+    tmp.write_text(text, encoding="utf-8")
+    os.replace(tmp, path)
+
+
+def main() -> int:
+    ap = argparse.ArgumentParser()
+    ap.add_argument("--only", help="comma separated store ids")
+    ap.add_argument("--probe", action="store_true", help="test, write nothing")
+    ap.add_argument("--rediscover", action="store_true")
+    args = ap.parse_args()
+
+    stores = json.loads(STORES_FILE.read_text(encoding="utf-8"))
+    blocked_list = [s for s in stores if s.get("blocked")]
+    stores = [s for s in stores if not s.get("blocked")]
+    active_ids = {s["id"] for s in stores}
+    if args.only:
+        wanted = set(args.only.split(","))
+        stores = [s for s in stores if s["id"] in wanted]
+
+    now_dt = dt.datetime.now(dt.timezone.utc)
+    now = now_dt.isoformat(timespec="seconds")
+    known = load_json(CACHE_FILE, {})
+    previous = load_json(OUT_FILE, {})
+    if not isinstance(known, dict):
+        known = {}
+    if not isinstance(previous, dict):
+        previous = {}
+
+    def needs_rediscovery(store) -> bool:
+        if args.rediscover:
+            return True
+        last = known.get(store["id"], {}).get("discovered_at")
+        if not last:
+            return True
+        try:
+            age = now_dt - dt.datetime.fromisoformat(last)
+        except (TypeError, ValueError):
+            return True
+        return age > dt.timedelta(hours=REDISCOVER_HOURS)
+
+    with cf.ThreadPoolExecutor(max_workers=12) as pool:
+        results = list(pool.map(
+            lambda s: run_store(s, known, now, needs_rediscovery(s)), stores))
+
+    for r in results:
+        print(f"{r['id']:<18} ok={r['ok']!s:<5} urls={len(r['urls']):<3} "
+              f"offers={len(r['offers']):<3} {r['reason']}")
+        if args.probe:
+            for o in r["offers"]:
+                print(f"    {o['model']:<18} {o['variant']:<22} "
+                      f"{o['price_try']:>11,.2f} {o['status']:<12} {o['title'][:60]}")
+            for line in r["log"][:4]:
+                print("    !", line[:150])
+    if args.probe:
+        return 0
+
+    # Offers read this run, plus last known offers we could not re-read.
+    offers = [o for r in results for o in r["offers"]]
+    fresh_urls = {o["url"] for o in offers}
+    by_id = {r["id"]: r for r in results}
+    cutoff = now_dt - dt.timedelta(days=KEEP_STALE_DAYS)
+    known_models = {(b, m) for b, _ in BRANDS for m, _ in MATERIALS}
+    for m in previous.get("models", []):
+        if (m.get("brand"), m.get("model")) not in known_models:
+            continue                         # no longer on the watchlist
+        for o in m.get("offers", []):
+            try:
+                if o["url"] in fresh_urls:
+                    continue
+                carried = {"seller": "", "note": "", "stale": False, **o,
+                           "brand": m["brand"], "model": m["model"],
+                           "variant": m.get("variant", "")}
+                for k in ("store", "store_id", "title", "price_try", "status"):
+                    carried[k]               # KeyError: broken entry, drop it
+                r = by_id.get(o["store_id"])
+                if r is None:                # store not part of this run
+                    if args.only and o["store_id"] in active_ids:
+                        offers.append(carried)
+                    continue                 # store removed from stores.json
+                if r["ok"] and o["url"] not in r["failed"]:
+                    continue                 # store answered: listing is gone
+                checked = dt.datetime.fromisoformat(o["checked_at"])
+                if checked.tzinfo is None:
+                    checked = checked.replace(tzinfo=dt.timezone.utc)
+                if checked >= cutoff:
+                    offers.append({**carried, "stale": True})
+            except (KeyError, TypeError, ValueError):
+                continue
+
+    groups: dict[tuple, dict] = {}
+    for o in offers:
+        key = (o["brand"], o["model"], o["variant"])
+        g = groups.setdefault(key, {
+            "brand": o["brand"], "model": o["model"], "variant": o["variant"],
+            "name": " ".join(x for x in (o["brand"], o["model"], o["variant"]) if x),
+            "offers": []})
+        g["offers"].append({k: o[k] for k in (
+            "store", "store_id", "seller", "title", "url", "price_try",
+            "status", "note", "checked_at", "stale")})
+    model_rank = {m: i for i, (m, _) in enumerate(MATERIALS[::-1])}
+    models = sorted(groups.values(), key=lambda g: (
+        BRAND_ORDER.index(g["brand"]), model_rank.get(g["model"], 9),
+        g["variant"]))
+    status_rank = {"in_stock": 0, "pre_order": 0, "unknown": 0, "out_of_stock": 1}
+    for g in models:
+        g["offers"].sort(key=lambda o: (status_rank.get(o["status"], 0), o["price_try"]))
+
+    prev_rate = previous.get("rate") if isinstance(previous.get("rate"), dict) else None
+    try:
+        last = float(prev_rate["usd_try"]) if prev_rate else None
+    except (KeyError, TypeError, ValueError):
+        last = None
+    rate = usd_try(last) or prev_rate
+    covered = [{"name": r["name"], "offers": len(r["offers"])}
+               for r in results if r["ok"]]
+    not_covered = ([{"name": r["name"], "reason": r["reason"]}
+                    for r in results if not r["ok"]]
+                   + [{"name": s["name"], "reason": s["blocked"]} for s in blocked_list])
+    if args.only:                # test run: keep the other stores' entries
+        mine = {r["name"] for r in results}
+        prev = previous.get("stores", {})
+        covered += [s for s in prev.get("covered", []) if s["name"] not in mine]
+        not_covered = [s for s in prev.get("not_covered", [])
+                       if s["name"] not in mine] + [
+                           s for s in not_covered if s["name"] in mine]
+    out = {"collected_at": now, "rate": rate, "models": models,
+           "stores": {"covered": sorted(covered, key=lambda s: s["name"].lower()),
+                      "not_covered": sorted(not_covered, key=lambda s: s["name"].lower())}}
+    OUT_FILE.parent.mkdir(parents=True, exist_ok=True)
+    write_json(OUT_FILE, out)
+    for r in results:
+        known[r["id"]] = {"urls": r["urls"], "skip": sorted(r.get("skip", [])),
+                          "discovered_at": r["discovered_at"]}
+    write_json(CACHE_FILE, known)
+    print(f"wrote {OUT_FILE} - {sum(len(g['offers']) for g in models)} offers, "
+          f"{len(models)} versions, rate {rate}")
+    return 0
+
+
+if __name__ == "__main__":
+    sys.exit(main())

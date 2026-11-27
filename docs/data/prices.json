@@ -1,0 +1,1492 @@
+{
+ "collected_at": "2026-11-27T03:29:59+00:00",
+ "rate": {
+  "usd_try": 50.7834,
+  "source": "Truncgil Finans",
+  "at": "2026-11-27T03:31:35+00:00"
+ },
+ "models": [
+  {
+   "brand": "eSUN",
+   "model": "PLA",
+   "variant": "Black",
+   "name": "eSUN PLA Black",
+   "offers": [
+    {
+     "store": "Robotzade",
+     "store_id": "robotzade",
+     "seller": "",
+     "title": "eSUN PLA Basic Filament Siyah 1.75mm 1Kg",
+     "url": "https://www.robotzade.com/urun/esun-pla-basic-filament-siyah-1-75mm-1kg",
+     "price_try": 642.6,
+     "status": "in_stock",
+     "note": "",
+     "checked_at": "2026-11-27T03:29:59+00:00",
+     "stale": false
+    },
+    {
+     "store": "3DCim",
+     "store_id": "3dcim",
+     "seller": "",
+     "title": "eSUN PLA Basic Siyah Filament 1.75mm 1 Kg",
+     "url": "https://3dcim.com/esun-pla-basic-siyah-filament",
+     "price_try": 645.73,
+     "status": "in_stock",
+     "note": "",
+     "checked_at": "2026-11-27T03:29:59+00:00",
+     "stale": false
+    },
+    {
+     "store": "Robolink Market",
+     "store_id": "robolinkmarket",
+     "seller": "",
+     "title": "Esun PLA Basic Filament Black 1.75mm 1000gr",
+     "url": "https://www.robolinkmarket.com/esun-pla-basic-filament-siyah-175mm-1000gr",
+     "price_try": 646.5,
+     "status": "in_stock",
+     "note": "",
+     "checked_at": "2026-11-27T03:29:59+00:00",
+     "stale": false
+    },
+    {
+     "store": "Direnc.net",
+     "store_id": "direnc",
+     "seller": "",
+     "title": "eSUN Filament PLA-Basic Siyah 1.75mm",
+     "url": "https://www.direnc.net/filament-175mm-pla-siyah-esun",
+     "price_try": 739.5,
+     "status": "in_stock",
+     "note": "",
+     "checked_at": "2026-11-27T03:29:59+00:00",
+     "stale": false
+    },
+    {
+     "store": "3DCim",
+     "store_id": "3dcim",
+     "seller": "",
+     "title": "eSun PLA STAR Galaksi Siyah Filament 1.75mm 1 Kg",
+     "url": "https://3dcim.com/esun-pla-star-galaksi-siyah-filament",
+     "price_try": 1114.91,
+     "status": "out_of_stock",
+     "note": "",
+     "checked_at": "2026-11-27T03:29:59+00:00",
+     "stale": false
+    }
+   ]
+  },
+  {
+   "brand": "eSUN",
+   "model": "PLA",
+   "variant": "White",
+   "name": "eSUN PLA White",
+   "offers": [
+    {
+     "store": "Robotzade",
+     "store_id": "robotzade",
+     "seller": "",
+     "title": "eSUN PLA Basic Filament Beyaz 1.75mm 1Kg",
+     "url": "https://www.robotzade.com/urun/esun-pla-basic-filament-beyaz-1-75mm-1kg",
+     "price_try": 642.6,
+     "status": "in_stock",
+     "note": "",
+     "checked_at": "2026-11-27T03:29:59+00:00",
+     "stale": false
+    },
+    {
+     "store": "3DCim",
+     "store_id": "3dcim",
+     "seller": "",
+     "title": "eSUN PLA Basic Kemik Beyaz Filament 1.75mm 1 Kg",
+     "url": "https://3dcim.com/esun-pla-basic-kemik-beyaz-filament",
+     "price_try": 645.73,
+     "status": "in_stock",
+     "note": "",
+     "checked_at": "2026-11-27T03:29:59+00:00",
+     "stale": false
+    },
+    {
+     "store": "Robolink Market",
+     "store_id": "robolinkmarket",
+     "seller": "",
+     "title": "Esun PLA Basic Filament White 1.75mm 1000gr",
+     "url": "https://www.robolinkmarket.com/esun-pla-basic-filament-beyaz-175mm-1000gr",
+     "price_try": 646.5,
+     "status": "in_stock",
+     "note": "",
+     "checked_at": "2026-11-27T03:29:59+00:00",
+     "stale": false
+    },
+    {
+     "store": "Direnc.net",
+     "store_id": "direnc",
+     "seller": "",
+     "title": "eSUN Filament PLA-Basic Beyaz 1.75mm",
+     "url": "https://www.direnc.net/filament-175mm-pla-beyaz-esun",
+     "price_try": 739.5,
+     "status": "in_stock",
+     "note": "",
+     "checked_at": "2026-11-27T03:29:59+00:00",
+     "stale": false
+    },
+    {
+     "store": "3DCim",
+     "store_id": "3dcim",
+     "seller": "",
+     "title": "eSUN PLA Basic Beyaz Filament 1.75mm 1 Kg",
+     "url": "https://3dcim.com/esun-pla-basic-beyaz-filament",
+     "price_try": 645.73,
+     "status": "out_of_stock",
+     "note": "",
+     "checked_at": "2026-11-27T03:29:59+00:00",
+     "stale": false
+    },
+    {
+     "store": "3DCim",
+     "store_id": "3dcim",
+     "seller": "",
+     "title": "eSun PLA-Lite Beyaz Filament 1.75mm 1 Kg",
+     "url": "https://3dcim.com/esun-pla-lite-beyaz-filament-1.75mm-1-kg-2556",
+     "price_try": 910.68,
+     "status": "out_of_stock",
+     "note": "",
+     "checked_at": "2026-11-27T03:29:59+00:00",
+     "stale": false
+    },
+    {
+     "store": "3DCim",
+     "store_id": "3dcim",
+     "seller": "",
+     "title": "eSun PLA-SS Beyaz Filament 1.75mm 1 Kg",
+     "url": "https://3dcim.com/esun-pla-ss-beyaz-filament",
+     "price_try": 1013.56,
+     "status": "out_of_stock",
+     "note": "",
+     "checked_at": "2026-11-27T03:29:59+00:00",
+     "stale": false
+    }
+   ]
+  },
+  {
+   "brand": "eSUN",
+   "model": "PETG",
+   "variant": "Black",
+   "name": "eSUN PETG Black",
+   "offers": [
+    {
+     "store": "Robolink Market",
+     "store_id": "robolinkmarket",
+     "seller": "",
+     "title": "Esun PETG Basic Filament Siyah 1.75mm 1000gr",
+     "url": "https://www.robolinkmarket.com/esun-petg-basic-siyah",
+     "price_try": 684.0,
+     "status": "out_of_stock",
+     "note": "",
+     "checked_at": "2026-11-27T03:29:59+00:00",
+     "stale": false
+    },
+    {
+     "store": "Robotzade",
+     "store_id": "robotzade",
+     "seller": "",
+     "title": "eSUN Siyah PETG Filament 1.75mm 1 KG",
+     "url": "https://www.robotzade.com/urun/esun-siyah-petg-filament-1-75mm-1-kg",
+     "price_try": 734.4,
+     "status": "out_of_stock",
+     "note": "",
+     "checked_at": "2026-11-27T03:29:59+00:00",
+     "stale": false
+    },
+    {
+     "store": "3DCim",
+     "store_id": "3dcim",
+     "seller": "",
+     "title": "eSUN PETG Basıc  Siyah Filament 1.75mm 1kg",
+     "url": "https://3dcim.com/esun-petg-basic-siyah-filament-1.75mm-1kg-3137",
+     "price_try": 734.82,
+     "status": "out_of_stock",
+     "note": "",
+     "checked_at": "2026-11-27T03:29:59+00:00",
+     "stale": false
+    },
+    {
+     "store": "Robolink Market",
+     "store_id": "robolinkmarket",
+     "seller": "",
+     "title": "Esun PETG Filament Siyah 1.75mm 1000gr",
+     "url": "https://www.robolinkmarket.com/esun-petg-filament-siyah-175mm-1000gr",
+     "price_try": 850.5,
+     "status": "out_of_stock",
+     "note": "",
+     "checked_at": "2026-11-27T03:29:59+00:00",
+     "stale": false
+    },
+    {
+     "store": "3DCim",
+     "store_id": "3dcim",
+     "seller": "",
+     "title": "eSUN PETG Siyah Filament 1.75mm 1kg",
+     "url": "https://3dcim.com/esun-petg-3d-filament-siyah",
+     "price_try": 851.39,
+     "status": "out_of_stock",
+     "note": "",
+     "checked_at": "2026-11-27T03:29:59+00:00",
+     "stale": false
+    }
+   ]
+  },
+  {
+   "brand": "eSUN",
+   "model": "PETG",
+   "variant": "White",
+   "name": "eSUN PETG White",
+   "offers": [
+    {
+     "store": "Robolink Market",
+     "store_id": "robolinkmarket",
+     "seller": "",
+     "title": "Esun PETG Basic Filament Beyaz 1.75mm 1000gr",
+     "url": "https://www.robolinkmarket.com/esun-petg-basic-beyaz",
+     "price_try": 684.0,
+     "status": "out_of_stock",
+     "note": "",
+     "checked_at": "2026-11-27T03:29:59+00:00",
+     "stale": false
+    },
+    {
+     "store": "Robotzade",
+     "store_id": "robotzade",
+     "seller": "",
+     "title": "eSUN Beyaz PETG Filament 1.75mm 1 KG",
+     "url": "https://www.robotzade.com/urun/esun-beyaz-petg-filament-1-75mm-1-kg",
+     "price_try": 734.4,
+     "status": "out_of_stock",
+     "note": "",
+     "checked_at": "2026-11-27T03:29:59+00:00",
+     "stale": false
+    },
+    {
+     "store": "3DCim",
+     "store_id": "3dcim",
+     "seller": "",
+     "title": "eSUN PETG Basıc Beyaz Filament 1.75mm 1kg",
+     "url": "https://3dcim.com/esun-petg-basic-beyaz-filament-1.75mm-1kg-3168",
+     "price_try": 734.82,
+     "status": "out_of_stock",
+     "note": "",
+     "checked_at": "2026-11-27T03:29:59+00:00",
+     "stale": false
+    },
+    {
+     "store": "3DCim",
+     "store_id": "3dcim",
+     "seller": "",
+     "title": "eSUN PETG Beyaz Filament 1.75mm 1kg",
+     "url": "https://3dcim.com/esun-petg-3d-filament-beyaz",
+     "price_try": 851.39,
+     "status": "out_of_stock",
+     "note": "",
+     "checked_at": "2026-11-27T03:29:59+00:00",
+     "stale": false
+    },
+    {
+     "store": "Robolink Market",
+     "store_id": "robolinkmarket",
+     "seller": "",
+     "title": "Esun PETG Filament Beyaz 1.75mm 1000gr",
+     "url": "https://www.robolinkmarket.com/esun-petg-filament-beyaz-175mm-1000gr",
+     "price_try": 1017.0,
+     "status": "out_of_stock",
+     "note": "",
+     "checked_at": "2026-11-27T03:29:59+00:00",
+     "stale": false
+    }
+   ]
+  },
+  {
+   "brand": "Elegoo",
+   "model": "PLA",
+   "variant": "Black",
+   "name": "Elegoo PLA Black",
+   "offers": [
+    {
+     "store": "3D Tekno Market",
+     "store_id": "3dteknomarket",
+     "seller": "",
+     "title": "ELEGOO PLA Filament Black 1Kg",
+     "url": "https://www.3dteknomarket.com/products/elegoo-pla-filament-black-1kg",
+     "price_try": 516.91,
+     "status": "in_stock",
+     "note": "",
+     "checked_at": "2026-11-27T03:29:59+00:00",
+     "stale": false
+    },
+    {
+     "store": "Matersan",
+     "store_id": "matersan",
+     "seller": "",
+     "title": "ELEGOO PLA Filament Black 1Kg",
+     "url": "https://www.matersan.com.tr/urun/elegoo-pla-filament-black-1kg",
+     "price_try": 540.0,
+     "status": "in_stock",
+     "note": "",
+     "checked_at": "2026-11-27T03:29:59+00:00",
+     "stale": false
+    },
+    {
+     "store": "Robo90",
+     "store_id": "robo90",
+     "seller": "",
+     "title": "ELEGOO PLA Filament Siyah 1Kg",
+     "url": "https://www.robo90.com/elegoo-pla-filament-siyah-1kg",
+     "price_try": 480.0,
+     "status": "out_of_stock",
+     "note": "",
+     "checked_at": "2026-11-27T03:29:59+00:00",
+     "stale": false
+    },
+    {
+     "store": "3DCim",
+     "store_id": "3dcim",
+     "seller": "",
+     "title": "ELEGOO PLA Filament Siyah 1.75mm 1 Kg",
+     "url": "https://3dcim.com/elegoo-pla-filament-siyah-2457",
+     "price_try": 499.0,
+     "status": "out_of_stock",
+     "note": "",
+     "checked_at": "2026-11-27T03:29:59+00:00",
+     "stale": false
+    },
+    {
+     "store": "Robolink Market",
+     "store_id": "robolinkmarket",
+     "seller": "",
+     "title": "Elegoo PLA Filament Siyah 1.75mm 1000gr",
+     "url": "https://www.robolinkmarket.com/elegoo-pla-filament-siyah-175mm-1000gr",
+     "price_try": 577.5,
+     "status": "out_of_stock",
+     "note": "",
+     "checked_at": "2026-11-27T03:29:59+00:00",
+     "stale": false
+    }
+   ]
+  },
+  {
+   "brand": "Elegoo",
+   "model": "PLA",
+   "variant": "White",
+   "name": "Elegoo PLA White",
+   "offers": [
+    {
+     "store": "3D Tekno Market",
+     "store_id": "3dteknomarket",
+     "seller": "",
+     "title": "ELEGOO PLA Filament White 1Kg",
+     "url": "https://www.3dteknomarket.com/products/elegoo-pla-filament-white-1kg",
+     "price_try": 516.91,
+     "status": "in_stock",
+     "note": "",
+     "checked_at": "2026-11-27T03:29:59+00:00",
+     "stale": false
+    },
+    {
+     "store": "Matersan",
+     "store_id": "matersan",
+     "seller": "",
+     "title": "ELEGOO PLA Filament White 1Kg",
+     "url": "https://www.matersan.com.tr/urun/elegoo-pla-filament-white-1kg",
+     "price_try": 540.0,
+     "status": "in_stock",
+     "note": "",
+     "checked_at": "2026-11-27T03:29:59+00:00",
+     "stale": false
+    },
+    {
+     "store": "Robolink Market",
+     "store_id": "robolinkmarket",
+     "seller": "",
+     "title": "Elegoo PLA Filament Beyaz 1.75mm 1000gr",
+     "url": "https://www.robolinkmarket.com/elegoo-pla-filament-beyaz-175mm-1000gr",
+     "price_try": 558.0,
+     "status": "in_stock",
+     "note": "",
+     "checked_at": "2026-11-27T03:29:59+00:00",
+     "stale": false
+    },
+    {
+     "store": "Robo90",
+     "store_id": "robo90",
+     "seller": "",
+     "title": "ELEGOO PLA Filament Beyaz 1Kg",
+     "url": "https://www.robo90.com/elegoo-pla-filament-beyaz-1kg",
+     "price_try": 480.0,
+     "status": "out_of_stock",
+     "note": "",
+     "checked_at": "2026-11-27T03:29:59+00:00",
+     "stale": false
+    },
+    {
+     "store": "3DCim",
+     "store_id": "3dcim",
+     "seller": "",
+     "title": "ELEGOO PLA  Filament Beyaz",
+     "url": "https://3dcim.com/elegoo-pla-filament-beyaz-2456",
+     "price_try": 603.07,
+     "status": "out_of_stock",
+     "note": "",
+     "checked_at": "2026-11-27T03:29:59+00:00",
+     "stale": false
+    }
+   ]
+  },
+  {
+   "brand": "Sunlu",
+   "model": "PLA",
+   "variant": "Black",
+   "name": "Sunlu PLA Black",
+   "offers": [
+    {
+     "store": "Depo3D",
+     "store_id": "depo3d",
+     "seller": "",
+     "title": "SUNLU PLA Black 1 kg 1,75 mm",
+     "url": "https://depo3d.com/sunlu-pla-black-1-kg-1-75-mm",
+     "price_try": 610.0,
+     "status": "in_stock",
+     "note": "",
+     "checked_at": "2026-11-27T03:29:59+00:00",
+     "stale": false
+    },
+    {
+     "store": "3DCim",
+     "store_id": "3dcim",
+     "seller": "",
+     "title": "SUNLU PLA Transparent Mist Black Filament 1.75mm 1 Kg",
+     "url": "https://3dcim.com/sunlu-pla-transparent-mist-black-filament-1.75mm-1-kg-3448",
+     "price_try": 653.4,
+     "status": "in_stock",
+     "note": "",
+     "checked_at": "2026-11-27T03:29:59+00:00",
+     "stale": false
+    },
+    {
+     "store": "3DCim",
+     "store_id": "3dcim",
+     "seller": "",
+     "title": "SUNLU PLA Black Filament 1.75mm 1 Kg",
+     "url": "https://3dcim.com/sunlu-pla-black-filament-1.75mm-1-kg-3414",
+     "price_try": 653.75,
+     "status": "in_stock",
+     "note": "",
+     "checked_at": "2026-11-27T03:29:59+00:00",
+     "stale": false
+    }
+   ]
+  },
+  {
+   "brand": "Sunlu",
+   "model": "PLA",
+   "variant": "White",
+   "name": "Sunlu PLA White",
+   "offers": [
+    {
+     "store": "Depo3D",
+     "store_id": "depo3d",
+     "seller": "",
+     "title": "SUNLU PLA White 1 kg 1,75 mm",
+     "url": "https://depo3d.com/sunlu-pla-white-1-kg-1-75-mm",
+     "price_try": 610.0,
+     "status": "in_stock",
+     "note": "",
+     "checked_at": "2026-11-27T03:29:59+00:00",
+     "stale": false
+    },
+    {
+     "store": "3DCim",
+     "store_id": "3dcim",
+     "seller": "",
+     "title": "SUNLU PLA Bone White Filament 1.75mm 1 Kg",
+     "url": "https://3dcim.com/sunlu-pla-bone-white-filament-1.75mm-1-kg-3417",
+     "price_try": 653.75,
+     "status": "in_stock",
+     "note": "",
+     "checked_at": "2026-11-27T03:29:59+00:00",
+     "stale": false
+    }
+   ]
+  },
+  {
+   "brand": "Porima",
+   "model": "PLA",
+   "variant": "Black",
+   "name": "Porima PLA Black",
+   "offers": [
+    {
+     "store": "Robotistan",
+     "store_id": "robotistan",
+     "seller": "",
+     "title": "Porima 3D 1.75 mm PLA Filament - Siyah",
+     "url": "https://www.robotistan.com/porima-3d-175-mm-pla-filament-siyah",
+     "price_try": 813.97,
+     "status": "in_stock",
+     "note": "",
+     "checked_at": "2026-11-27T03:29:59+00:00",
+     "stale": false
+    }
+   ]
+  },
+  {
+   "brand": "Porima",
+   "model": "PLA",
+   "variant": "White",
+   "name": "Porima PLA White",
+   "offers": [
+    {
+     "store": "Robotistan",
+     "store_id": "robotistan",
+     "seller": "",
+     "title": "Porima 3D 1.75 mm PLA Filament - Beyaz",
+     "url": "https://www.robotistan.com/porima-3d-175-mm-pla-filament-beyaz",
+     "price_try": 813.97,
+     "status": "out_of_stock",
+     "note": "",
+     "checked_at": "2026-11-27T03:29:59+00:00",
+     "stale": false
+    }
+   ]
+  },
+  {
+   "brand": "Porima",
+   "model": "PETG",
+   "variant": "White",
+   "name": "Porima PETG White",
+   "offers": [
+    {
+     "store": "Robotistan",
+     "store_id": "robotistan",
+     "seller": "",
+     "title": "Porima 3D 1.75 mm PETG Filament - Beyaz",
+     "url": "https://www.robotistan.com/porima-175mm-petg-filament-beyaz",
+     "price_try": 857.27,
+     "status": "out_of_stock",
+     "note": "",
+     "checked_at": "2026-11-27T03:29:59+00:00",
+     "stale": false
+    }
+   ]
+  },
+  {
+   "brand": "Creality",
+   "model": "PLA",
+   "variant": "Black",
+   "name": "Creality PLA Black",
+   "offers": [
+    {
+     "store": "Robo90",
+     "store_id": "robo90",
+     "seller": "",
+     "title": "Creality Soleyin Ultra PLA Siyah - 1 Kg",
+     "url": "https://www.robo90.com/creality-soleyin-ultra-pla-siyah",
+     "price_try": 600.0,
+     "status": "in_stock",
+     "note": "",
+     "checked_at": "2026-11-27T03:29:59+00:00",
+     "stale": false
+    },
+    {
+     "store": "3DCim",
+     "store_id": "3dcim",
+     "seller": "",
+     "title": "Creality Ender Fast PLA Siyah Filament 1.75mm 1kg",
+     "url": "https://3dcim.com/creality-ender-fast-pla-filament-siyah",
+     "price_try": 727.33,
+     "status": "in_stock",
+     "note": "",
+     "checked_at": "2026-11-27T03:29:59+00:00",
+     "stale": false
+    },
+    {
+     "store": "3DCim",
+     "store_id": "3dcim",
+     "seller": "",
+     "title": "Creality CR PLA Siyah Filament 1.75mm 1kg",
+     "url": "https://3dcim.com/creality-cr-pla-siyah",
+     "price_try": 800.06,
+     "status": "in_stock",
+     "note": "",
+     "checked_at": "2026-11-27T03:29:59+00:00",
+     "stale": false
+    },
+    {
+     "store": "Robotzade",
+     "store_id": "robotzade",
+     "seller": "",
+     "title": "Creality Ender PLA Siyah Filament 1.75mm 1kg",
+     "url": "https://www.robotzade.com/urun/creality-ender-pla-siyah-filament-1-75mm-1kg",
+     "price_try": 612.0,
+     "status": "out_of_stock",
+     "note": "",
+     "checked_at": "2026-11-27T03:29:59+00:00",
+     "stale": false
+    },
+    {
+     "store": "Matersan",
+     "store_id": "matersan",
+     "seller": "",
+     "title": "Creality CR-PLA Filament Siyah 1.75mm 1kg",
+     "url": "https://www.matersan.com.tr/urun/creality-cr-pla-filament-siyah-1-75mm-1kg",
+     "price_try": 645.0,
+     "status": "out_of_stock",
+     "note": "",
+     "checked_at": "2026-11-27T03:29:59+00:00",
+     "stale": false
+    },
+    {
+     "store": "Robo90",
+     "store_id": "robo90",
+     "seller": "",
+     "title": "Creality Ender Fast PLA Filament Siyah 1.75mm 1kg",
+     "url": "https://www.robo90.com/creality-ender-fast-pla-filament-siyah-175mm-1kg",
+     "price_try": 660.0,
+     "status": "out_of_stock",
+     "note": "",
+     "checked_at": "2026-11-27T03:29:59+00:00",
+     "stale": false
+    },
+    {
+     "store": "Robolink Market",
+     "store_id": "robolinkmarket",
+     "seller": "",
+     "title": "Creality Ender Fast PLA Siyah Filament 1.75mm 1000gr",
+     "url": "https://www.robolinkmarket.com/creality-ender-fast-pla-siyah-filament-175mm-1000gr",
+     "price_try": 699.0,
+     "status": "out_of_stock",
+     "note": "",
+     "checked_at": "2026-11-27T03:29:59+00:00",
+     "stale": false
+    },
+    {
+     "store": "Robo90",
+     "store_id": "robo90",
+     "seller": "",
+     "title": "Creality CR-PLA Filament - Siyah - 1 Kg",
+     "url": "https://www.robo90.com/creality-cr-pla-filament-siyah-1-kg",
+     "price_try": 720.0,
+     "status": "out_of_stock",
+     "note": "",
+     "checked_at": "2026-11-27T03:29:59+00:00",
+     "stale": false
+    }
+   ]
+  },
+  {
+   "brand": "Creality",
+   "model": "PLA",
+   "variant": "White",
+   "name": "Creality PLA White",
+   "offers": [
+    {
+     "store": "Robo90",
+     "store_id": "robo90",
+     "seller": "",
+     "title": "Creality Soleyin Ultra PLA Beyaz - 1 Kg",
+     "url": "https://www.robo90.com/creality-soleyin-ultra-pla-beyaz",
+     "price_try": 600.0,
+     "status": "in_stock",
+     "note": "",
+     "checked_at": "2026-11-27T03:29:59+00:00",
+     "stale": false
+    },
+    {
+     "store": "Robolink Market",
+     "store_id": "robolinkmarket",
+     "seller": "",
+     "title": "Creality Ender Fast PLA Beyaz Filament 1.75mm 1000gr",
+     "url": "https://www.robolinkmarket.com/creality-ender-fast-pla-beyaz-filament-175mm-1000gr",
+     "price_try": 699.0,
+     "status": "in_stock",
+     "note": "",
+     "checked_at": "2026-11-27T03:29:59+00:00",
+     "stale": false
+    },
+    {
+     "store": "3DCim",
+     "store_id": "3dcim",
+     "seller": "",
+     "title": "Creality Ender Fast PLA Beyaz Filament 1.75mm 1kg",
+     "url": "https://3dcim.com/creality-ender-fast-pla-beyaz",
+     "price_try": 727.33,
+     "status": "in_stock",
+     "note": "",
+     "checked_at": "2026-11-27T03:29:59+00:00",
+     "stale": false
+    },
+    {
+     "store": "3DCim",
+     "store_id": "3dcim",
+     "seller": "",
+     "title": "Creality CR PLA Ivory Beyaz Filament 1.75mm 1kg",
+     "url": "https://3dcim.com/creality-cr-pla-filament-ivory-beyaz",
+     "price_try": 800.06,
+     "status": "in_stock",
+     "note": "",
+     "checked_at": "2026-11-27T03:29:59+00:00",
+     "stale": false
+    },
+    {
+     "store": "Robotzade",
+     "store_id": "robotzade",
+     "seller": "",
+     "title": "Creality Ender PLA Beyaz Filament 1.75mm 1kg",
+     "url": "https://www.robotzade.com/urun/creality-ender-pla-beyaz-filament-1-75mm-1kg",
+     "price_try": 612.0,
+     "status": "out_of_stock",
+     "note": "",
+     "checked_at": "2026-11-27T03:29:59+00:00",
+     "stale": false
+    },
+    {
+     "store": "Matersan",
+     "store_id": "matersan",
+     "seller": "",
+     "title": "Creality CR-PLA Filament Fildişi Beyaz 1.75mm 1kg",
+     "url": "https://www.matersan.com.tr/urun/creality-cr-pla-filament-fildisi-beyaz-1-75mm-1kg",
+     "price_try": 645.0,
+     "status": "out_of_stock",
+     "note": "",
+     "checked_at": "2026-11-27T03:29:59+00:00",
+     "stale": false
+    },
+    {
+     "store": "Robo90",
+     "store_id": "robo90",
+     "seller": "",
+     "title": "Creality Ender Fast PLA Filament Beyaz 1.75mm 1kg",
+     "url": "https://www.robo90.com/creality-ender-fast-pla-filament-beyaz-175mm-1kg",
+     "price_try": 660.0,
+     "status": "out_of_stock",
+     "note": "",
+     "checked_at": "2026-11-27T03:29:59+00:00",
+     "stale": false
+    },
+    {
+     "store": "Robo90",
+     "store_id": "robo90",
+     "seller": "",
+     "title": "Creality CR-PLA Filament - Fildişi Beyaz - 1 Kg",
+     "url": "https://www.robo90.com/creality-cr-pla-filament-fildisi-beyaz-1-kg",
+     "price_try": 720.0,
+     "status": "out_of_stock",
+     "note": "",
+     "checked_at": "2026-11-27T03:29:59+00:00",
+     "stale": false
+    }
+   ]
+  },
+  {
+   "brand": "Creality",
+   "model": "PETG",
+   "variant": "Black",
+   "name": "Creality PETG Black",
+   "offers": [
+    {
+     "store": "Robolink Market",
+     "store_id": "robolinkmarket",
+     "seller": "",
+     "title": "Creality Soleyin Basic PETG Black Filament 1.75mm 1000gr",
+     "url": "https://www.robolinkmarket.com/creality-soleyin-basic-petg-black-filament-175mm-1000gr",
+     "price_try": 532.5,
+     "status": "in_stock",
+     "note": "",
+     "checked_at": "2026-11-27T03:29:59+00:00",
+     "stale": false
+    },
+    {
+     "store": "3DCim",
+     "store_id": "3dcim",
+     "seller": "",
+     "title": "Creality Soleyin Basic PETG Black Filament 1.75mm 1 Kg",
+     "url": "https://3dcim.com/creality-soleyin-basic-petg-black-filament",
+     "price_try": 552.61,
+     "status": "in_stock",
+     "note": "",
+     "checked_at": "2026-11-27T03:29:59+00:00",
+     "stale": false
+    },
+    {
+     "store": "Robo90",
+     "store_id": "robo90",
+     "seller": "",
+     "title": "Creality Soleyin Basic PETG Filament Siyah - 1 Kg",
+     "url": "https://www.robo90.com/creality-soleyin-basic-petg-filament-siyah-1-kg",
+     "price_try": 480.0,
+     "status": "out_of_stock",
+     "note": "",
+     "checked_at": "2026-11-27T03:29:59+00:00",
+     "stale": false
+    },
+    {
+     "store": "Robo90",
+     "store_id": "robo90",
+     "seller": "",
+     "title": "Creality CR-PETG Siyah Filament 1.75mm 1Kg",
+     "url": "https://www.robo90.com/creality-cr-petg-siyah-filament-175mm-1kg",
+     "price_try": 600.0,
+     "status": "out_of_stock",
+     "note": "",
+     "checked_at": "2026-11-27T03:29:59+00:00",
+     "stale": false
+    },
+    {
+     "store": "Matersan",
+     "store_id": "matersan",
+     "seller": "",
+     "title": "Creality CR-PETG Filament Siyah 1.75mm 1kg",
+     "url": "https://www.matersan.com.tr/urun/creality-cr-petg-filament-siyah-1-75mm-1kg",
+     "price_try": 600.0,
+     "status": "out_of_stock",
+     "note": "",
+     "checked_at": "2026-11-27T03:29:59+00:00",
+     "stale": false
+    },
+    {
+     "store": "Robolink Market",
+     "store_id": "robolinkmarket",
+     "seller": "",
+     "title": "Creality CR-PETG Siyah Filament 1.75mm 1000gr",
+     "url": "https://www.robolinkmarket.com/creality-cr-petg-siyah-filament-175mm-1000gr",
+     "price_try": 622.5,
+     "status": "out_of_stock",
+     "note": "",
+     "checked_at": "2026-11-27T03:29:59+00:00",
+     "stale": false
+    },
+    {
+     "store": "Robotzade",
+     "store_id": "robotzade",
+     "seller": "",
+     "title": "Creality CR-PETG Siyah Filament 1.75mm 1Kg",
+     "url": "https://www.robotzade.com/urun/creality-cr-petg-siyah-filament-1-75mm-1kg",
+     "price_try": 673.2,
+     "status": "out_of_stock",
+     "note": "",
+     "checked_at": "2026-11-27T03:29:59+00:00",
+     "stale": false
+    }
+   ]
+  },
+  {
+   "brand": "Creality",
+   "model": "PETG",
+   "variant": "White",
+   "name": "Creality PETG White",
+   "offers": [
+    {
+     "store": "Robolink Market",
+     "store_id": "robolinkmarket",
+     "seller": "",
+     "title": "Creality Soleyin Basic PETG White Filament 1.75mm 1000gr",
+     "url": "https://www.robolinkmarket.com/creality-soleyin-basic-petg-white-filament-175mm-1000gr",
+     "price_try": 517.5,
+     "status": "in_stock",
+     "note": "",
+     "checked_at": "2026-11-27T03:29:59+00:00",
+     "stale": false
+    },
+    {
+     "store": "Robo90",
+     "store_id": "robo90",
+     "seller": "",
+     "title": "Creality CR-PETG Beyaz Filament 1.75mm 1Kg",
+     "url": "https://www.robo90.com/creality-cr-petg-beyaz-filament-175mm-1kg",
+     "price_try": 600.0,
+     "status": "in_stock",
+     "note": "",
+     "checked_at": "2026-11-27T03:29:59+00:00",
+     "stale": false
+    },
+    {
+     "store": "Robo90",
+     "store_id": "robo90",
+     "seller": "",
+     "title": "Creality Soleyin Basic PETG Filament Beyaz - 1 Kg",
+     "url": "https://www.robo90.com/creality-soleyin-basic-petg-filament-beyaz-1-kg",
+     "price_try": 480.0,
+     "status": "out_of_stock",
+     "note": "",
+     "checked_at": "2026-11-27T03:29:59+00:00",
+     "stale": false
+    },
+    {
+     "store": "3DCim",
+     "store_id": "3dcim",
+     "seller": "",
+     "title": "Creality Soleyin Basic PETG White Filament 1.75mm 1 Kg",
+     "url": "https://3dcim.com/creality-soleyin-basic-petg-white-filament",
+     "price_try": 552.61,
+     "status": "out_of_stock",
+     "note": "",
+     "checked_at": "2026-11-27T03:29:59+00:00",
+     "stale": false
+    },
+    {
+     "store": "Matersan",
+     "store_id": "matersan",
+     "seller": "",
+     "title": "Creality CR-PETG Filament Beyaz 1.75mm 1kg",
+     "url": "https://www.matersan.com.tr/urun/creality-cr-petg-filament-beyaz-1-75mm-1kg",
+     "price_try": 600.0,
+     "status": "out_of_stock",
+     "note": "",
+     "checked_at": "2026-11-27T03:29:59+00:00",
+     "stale": false
+    },
+    {
+     "store": "3DCim",
+     "store_id": "3dcim",
+     "seller": "",
+     "title": "Creality CR PETG Beyaz Filament 1.75mm 1kg",
+     "url": "https://3dcim.com/creality-cr-petg-beyaz",
+     "price_try": 618.23,
+     "status": "out_of_stock",
+     "note": "",
+     "checked_at": "2026-11-27T03:29:59+00:00",
+     "stale": false
+    },
+    {
+     "store": "Robolink Market",
+     "store_id": "robolinkmarket",
+     "seller": "",
+     "title": "Creality CR-PETG Beyaz Filament 1.75mm 1000gr",
+     "url": "https://www.robolinkmarket.com/creality-cr-petg-beyaz-filament-175mm-1000gr",
+     "price_try": 622.5,
+     "status": "out_of_stock",
+     "note": "",
+     "checked_at": "2026-11-27T03:29:59+00:00",
+     "stale": false
+    },
+    {
+     "store": "Robotzade",
+     "store_id": "robotzade",
+     "seller": "",
+     "title": "Creality CR-PETG Beyaz Filament 1.75mm 1Kg",
+     "url": "https://www.robotzade.com/urun/creality-cr-petg-beyaz-filament-1-75mm-1kg",
+     "price_try": 673.2,
+     "status": "out_of_stock",
+     "note": "",
+     "checked_at": "2026-11-27T03:29:59+00:00",
+     "stale": false
+    }
+   ]
+  },
+  {
+   "brand": "Bambu Lab",
+   "model": "PLA",
+   "variant": "Black",
+   "name": "Bambu Lab PLA Black",
+   "offers": [
+    {
+     "store": "Robotzade",
+     "store_id": "robotzade",
+     "seller": "",
+     "title": "Bambu Lab PLA Basic Filament Siyah 1.75mm 1kg",
+     "url": "https://www.robotzade.com/urun/bambu-lab-pla-basic-filament-siyah-1-75mm-1kg",
+     "price_try": 979.2,
+     "status": "in_stock",
+     "note": "",
+     "checked_at": "2026-11-27T03:29:59+00:00",
+     "stale": false
+    },
+    {
+     "store": "3DCim",
+     "store_id": "3dcim",
+     "seller": "",
+     "title": "Bambu Lab PLA Basic Siyah Filament 1.75mm 1kg – Makaralı",
+     "url": "https://3dcim.com/bambu-lab-pla-basic-siyah-filament-1.75mm-1kg-2752",
+     "price_try": 990.75,
+     "status": "in_stock",
+     "note": "",
+     "checked_at": "2026-11-27T03:29:59+00:00",
+     "stale": false
+    },
+    {
+     "store": "Robolink Market",
+     "store_id": "robolinkmarket",
+     "seller": "",
+     "title": "Bambu Lab PLA Basic Filament Black 1.75mm 1000gr",
+     "url": "https://www.robolinkmarket.com/bambu-lab-pla-basic-filament-siyah-175mm-1000gr",
+     "price_try": 999.0,
+     "status": "in_stock",
+     "note": "",
+     "checked_at": "2026-11-27T03:29:59+00:00",
+     "stale": false
+    },
+    {
+     "store": "MetatechTR (Bambu Lab distributor)",
+     "store_id": "metatech",
+     "seller": "",
+     "title": "Bambu Lab PLA Basic-Black 1Kg Filament",
+     "url": "https://store.metatechtr.com/bambu-lab-pla-basic-black-1kg-filament",
+     "price_try": 896.67,
+     "status": "out_of_stock",
+     "note": "",
+     "checked_at": "2026-11-27T03:29:59+00:00",
+     "stale": false
+    },
+    {
+     "store": "MetatechTR (Bambu Lab distributor)",
+     "store_id": "metatech",
+     "seller": "",
+     "title": "Bambu PLA Pure-Absolute Black- with Bambu Reusable Spool 1Kg Filament",
+     "url": "https://store.metatechtr.com/bambu-pla-pure-absolute-black-with-bambu-reusable-spool-1kg-filament",
+     "price_try": 1076.0,
+     "status": "out_of_stock",
+     "note": "",
+     "checked_at": "2026-11-27T03:29:59+00:00",
+     "stale": false
+    },
+    {
+     "store": "3DCim",
+     "store_id": "3dcim",
+     "seller": "",
+     "title": "Bambu PLA Basic Black With Bambu Reusable Spoo(makaralı)",
+     "url": "https://3dcim.com/bambu-pla-basic-black-with-bambu-reusable-spoomakarali-2416",
+     "price_try": 1127.58,
+     "status": "out_of_stock",
+     "note": "",
+     "checked_at": "2026-11-27T03:29:59+00:00",
+     "stale": false
+    }
+   ]
+  },
+  {
+   "brand": "Bambu Lab",
+   "model": "PLA",
+   "variant": "Black refill",
+   "name": "Bambu Lab PLA Black refill",
+   "offers": [
+    {
+     "store": "MetatechTR (Bambu Lab distributor)",
+     "store_id": "metatech",
+     "seller": "",
+     "title": "Bambu Lab PLA Basic-Black (Refill) 1Kg Filament",
+     "url": "https://store.metatechtr.com/bambu-lab-pla-basic-black-refill-1kg-filament",
+     "price_try": 762.17,
+     "status": "in_stock",
+     "note": "",
+     "checked_at": "2026-11-27T03:29:59+00:00",
+     "stale": false
+    },
+    {
+     "store": "MetatechTR (Bambu Lab distributor)",
+     "store_id": "metatech",
+     "seller": "",
+     "title": "Bambu PLA Pure-Absolute Black Refill 1Kg Filament",
+     "url": "https://store.metatechtr.com/bambu-pla-pure-absolute-black-refill-1kg-filament",
+     "price_try": 896.67,
+     "status": "out_of_stock",
+     "note": "",
+     "checked_at": "2026-11-27T03:29:59+00:00",
+     "stale": false
+    },
+    {
+     "store": "3DCim",
+     "store_id": "3dcim",
+     "seller": "",
+     "title": "Bambu PLA Basic Siyah 1.75mm 1 Kg (Makarasız)",
+     "url": "https://3dcim.com/bambu-pla-basic-siyah-1.75mm-1-kg-2284",
+     "price_try": 1127.58,
+     "status": "out_of_stock",
+     "note": "",
+     "checked_at": "2026-11-27T03:29:59+00:00",
+     "stale": false
+    },
+    {
+     "store": "Robo90",
+     "store_id": "robo90",
+     "seller": "",
+     "title": "Bambu Lab PLA Basic Filament - Siyah - 1 Kg - Makarasız",
+     "url": "https://www.robo90.com/bambu-lab-pla-basic-filament-siyah-1-kg-makarasiz",
+     "price_try": 1160.71,
+     "status": "out_of_stock",
+     "note": "",
+     "checked_at": "2026-11-27T03:29:59+00:00",
+     "stale": false
+    }
+   ]
+  },
+  {
+   "brand": "Bambu Lab",
+   "model": "PLA",
+   "variant": "White",
+   "name": "Bambu Lab PLA White",
+   "offers": [
+    {
+     "store": "3DCim",
+     "store_id": "3dcim",
+     "seller": "",
+     "title": "Bambu Lab PLA Basic Jade Beyaz Filament 1.75mm 1kg – Makaralı",
+     "url": "https://3dcim.com/bambu-lab-pla-basic-jade-beyaz-filament-1.75mm-1kg-2753",
+     "price_try": 990.75,
+     "status": "in_stock",
+     "note": "",
+     "checked_at": "2026-11-27T03:29:59+00:00",
+     "stale": false
+    },
+    {
+     "store": "MetatechTR (Bambu Lab distributor)",
+     "store_id": "metatech",
+     "seller": "",
+     "title": "Bambu Lab PLA Basic-Jade White 1Kg Filament",
+     "url": "https://store.metatechtr.com/bambu-lab-pla-basic-jade-white-1kg-filament",
+     "price_try": 896.67,
+     "status": "out_of_stock",
+     "note": "",
+     "checked_at": "2026-11-27T03:29:59+00:00",
+     "stale": false
+    },
+    {
+     "store": "MetatechTR (Bambu Lab distributor)",
+     "store_id": "metatech",
+     "seller": "",
+     "title": "Bambu PLA Pure-Pure White- with Bambu Reusable Spool 1Kg Filament",
+     "url": "https://store.metatechtr.com/bambu-pla-pure-pure-white-with-bambu-reusable-spool-1kg-filament",
+     "price_try": 1076.0,
+     "status": "out_of_stock",
+     "note": "",
+     "checked_at": "2026-11-27T03:29:59+00:00",
+     "stale": false
+    }
+   ]
+  },
+  {
+   "brand": "Bambu Lab",
+   "model": "PLA",
+   "variant": "White refill",
+   "name": "Bambu Lab PLA White refill",
+   "offers": [
+    {
+     "store": "MetatechTR (Bambu Lab distributor)",
+     "store_id": "metatech",
+     "seller": "",
+     "title": "Bambu Lab PLA Basic-Jade White (Refill) 1Kg Filament",
+     "url": "https://store.metatechtr.com/bambu-lab-pla-basic-jade-white-refill-1kg-filament",
+     "price_try": 762.17,
+     "status": "in_stock",
+     "note": "",
+     "checked_at": "2026-11-27T03:29:59+00:00",
+     "stale": false
+    },
+    {
+     "store": "MetatechTR (Bambu Lab distributor)",
+     "store_id": "metatech",
+     "seller": "",
+     "title": "Bambu PLA Pure-Pure White Refill 1Kg Filament",
+     "url": "https://store.metatechtr.com/bambu-lab-pla-pure-pure-white-refill-1kg-filament",
+     "price_try": 896.67,
+     "status": "out_of_stock",
+     "note": "",
+     "checked_at": "2026-11-27T03:29:59+00:00",
+     "stale": false
+    }
+   ]
+  },
+  {
+   "brand": "Bambu Lab",
+   "model": "PETG",
+   "variant": "Black",
+   "name": "Bambu Lab PETG Black",
+   "offers": [
+    {
+     "store": "MetatechTR (Bambu Lab distributor)",
+     "store_id": "metatech",
+     "seller": "",
+     "title": "Bambu PETG Basic-Black 1Kg Filament",
+     "url": "https://store.metatechtr.com/bambu-petg-basic-black-1kg-filament",
+     "price_try": 896.67,
+     "status": "out_of_stock",
+     "note": "",
+     "checked_at": "2026-11-27T03:29:59+00:00",
+     "stale": false
+    },
+    {
+     "store": "3DCim",
+     "store_id": "3dcim",
+     "seller": "",
+     "title": "Bambu Lab PETG Basic Siyah Filament 1.75mm 1kg – Makaralı",
+     "url": "https://3dcim.com/petg-basic-black",
+     "price_try": 973.01,
+     "status": "out_of_stock",
+     "note": "",
+     "checked_at": "2026-11-27T03:29:59+00:00",
+     "stale": false
+    },
+    {
+     "store": "MetatechTR (Bambu Lab distributor)",
+     "store_id": "metatech",
+     "seller": "",
+     "title": "Bambu Lab PETG Basic-Black 1Kg Filament",
+     "url": "https://store.metatechtr.com/bambu-lab-petg-basic-black-1kg-filament",
+     "price_try": 1153.78,
+     "status": "out_of_stock",
+     "note": "",
+     "checked_at": "2026-11-27T03:29:59+00:00",
+     "stale": false
+    }
+   ]
+  },
+  {
+   "brand": "Bambu Lab",
+   "model": "PETG",
+   "variant": "Black refill",
+   "name": "Bambu Lab PETG Black refill",
+   "offers": [
+    {
+     "store": "MetatechTR (Bambu Lab distributor)",
+     "store_id": "metatech",
+     "seller": "",
+     "title": "Bambu PETG Basic-Black Refill 1Kg Filament",
+     "url": "https://store.metatechtr.com/bambu-petg-basic-black-refill-1kg-filament",
+     "price_try": 762.17,
+     "status": "in_stock",
+     "note": "",
+     "checked_at": "2026-11-27T03:29:59+00:00",
+     "stale": false
+    },
+    {
+     "store": "MetatechTR (Bambu Lab distributor)",
+     "store_id": "metatech",
+     "seller": "",
+     "title": "Bambu Lab PETG Basic-Black (Refill) 1Kg Filament",
+     "url": "https://store.metatechtr.com/bambu-lab-petg-basic-black-refill-1kg-filament",
+     "price_try": 949.44,
+     "status": "out_of_stock",
+     "note": "",
+     "checked_at": "2026-11-27T03:29:59+00:00",
+     "stale": false
+    },
+    {
+     "store": "MetatechTR (Bambu Lab distributor)",
+     "store_id": "metatech",
+     "seller": "",
+     "title": "Bambu Lab PETG HF-Black (Refill) 1Kg Filament",
+     "url": "https://store.metatechtr.com/bambu-lab-petg-hf-black-refill-1kg-filament",
+     "price_try": 1031.13,
+     "status": "out_of_stock",
+     "note": "",
+     "checked_at": "2026-11-27T03:29:59+00:00",
+     "stale": false
+    }
+   ]
+  },
+  {
+   "brand": "Bambu Lab",
+   "model": "PETG",
+   "variant": "White",
+   "name": "Bambu Lab PETG White",
+   "offers": [
+    {
+     "store": "MetatechTR (Bambu Lab distributor)",
+     "store_id": "metatech",
+     "seller": "",
+     "title": "Bambu PETG Basic-White- with Bambu Reusable Spool 1Kg Filament",
+     "url": "https://store.metatechtr.com/bambu-petg-basic-white-with-bambu-reusable-spool-1kg-filament",
+     "price_try": 896.67,
+     "status": "out_of_stock",
+     "note": "",
+     "checked_at": "2026-11-27T03:29:59+00:00",
+     "stale": false
+    },
+    {
+     "store": "3DCim",
+     "store_id": "3dcim",
+     "seller": "",
+     "title": "Bambu Lab PETG Basic Beyaz Filament 1.75mm 1kg – Makaralı",
+     "url": "https://3dcim.com/bambu-lab-petg-basic-beyaz-filament-1.75mm-1kg-makarali-3317",
+     "price_try": 973.01,
+     "status": "out_of_stock",
+     "note": "",
+     "checked_at": "2026-11-27T03:29:59+00:00",
+     "stale": false
+    },
+    {
+     "store": "MetatechTR (Bambu Lab distributor)",
+     "store_id": "metatech",
+     "seller": "",
+     "title": "Bambu Lab PETG Basic-White 1Kg Filament",
+     "url": "https://store.metatechtr.com/bambu-lab-petg-basic-white-1kg-filament",
+     "price_try": 1153.78,
+     "status": "out_of_stock",
+     "note": "",
+     "checked_at": "2026-11-27T03:29:59+00:00",
+     "stale": false
+    }
+   ]
+  },
+  {
+   "brand": "Bambu Lab",
+   "model": "PETG",
+   "variant": "White refill",
+   "name": "Bambu Lab PETG White refill",
+   "offers": [
+    {
+     "store": "MetatechTR (Bambu Lab distributor)",
+     "store_id": "metatech",
+     "seller": "",
+     "title": "Bambu PETG Basic-White Refill 1Kg Filament",
+     "url": "https://store.metatechtr.com/bambu-petg-basic-white-refill-1kg-filament",
+     "price_try": 762.17,
+     "status": "out_of_stock",
+     "note": "",
+     "checked_at": "2026-11-27T03:29:59+00:00",
+     "stale": false
+    },
+    {
+     "store": "MetatechTR (Bambu Lab distributor)",
+     "store_id": "metatech",
+     "seller": "",
+     "title": "Bambu Lab PETG Basic-White (Refill) 1Kg Filament",
+     "url": "https://store.metatechtr.com/bambu-lab-petg-basic-white-refill-1kg-filament",
+     "price_try": 949.44,
+     "status": "out_of_stock",
+     "note": "",
+     "checked_at": "2026-11-27T03:29:59+00:00",
+     "stale": false
+    },
+    {
+     "store": "MetatechTR (Bambu Lab distributor)",
+     "store_id": "metatech",
+     "seller": "",
+     "title": "Bambu Lab PETG HF-White (Refill) 1Kg Filament",
+     "url": "https://store.metatechtr.com/bambu-lab-petg-hf-white-refill-1kg-filament",
+     "price_try": 1031.13,
+     "status": "out_of_stock",
+     "note": "",
+     "checked_at": "2026-11-27T03:29:59+00:00",
+     "stale": false
+    }
+   ]
+  }
+ ],
+ "stores": {
+  "covered": [
+   {
+    "name": "3D Tekno Market",
+    "offers": 2
+   },
+   {
+    "name": "3DCim",
+    "offers": 28
+   },
+   {
+    "name": "Depo3D",
+    "offers": 2
+   },
+   {
+    "name": "Direnc.net",
+    "offers": 2
+   },
+   {
+    "name": "FilamentMarketim",
+    "offers": 0
+   },
+   {
+    "name": "Makerpazar",
+    "offers": 0
+   },
+   {
+    "name": "Matersan",
+    "offers": 6
+   },
+   {
+    "name": "MetatechTR (Bambu Lab distributor)",
+    "offers": 18
+   },
+   {
+    "name": "Porima 3D",
+    "offers": 0
+   },
+   {
+    "name": "Robo90",
+    "offers": 13
+   },
+   {
+    "name": "Robolink Market",
+    "offers": 15
+   },
+   {
+    "name": "Robotistan",
+    "offers": 3
+   },
+   {
+    "name": "Robotzade",
+    "offers": 9
+   }
+  ],
+  "not_covered": [
+   {
+    "name": "3D Yazıcı Türkiye",
+    "reason": "prices only load inside a full browser"
+   },
+   {
+    "name": "Amazon.com.tr",
+    "reason": "automated search returned none of these printers"
+   },
+   {
+    "name": "Hepsiburada",
+    "reason": "answers automated reading with a bot check"
+   },
+   {
+    "name": "idefix",
+    "reason": "search is closed to automated reading"
+   },
+   {
+    "name": "İncehesap",
+    "reason": "answers automated reading with a bot check"
+   },
+   {
+    "name": "İtopya",
+    "reason": "answers automated reading with a bot check"
+   },
+   {
+    "name": "Koçtaş",
+    "reason": "refuses automated reading (access denied)"
+   },
+   {
+    "name": "MediaMarkt",
+    "reason": "does not answer automated requests"
+   },
+   {
+    "name": "N11",
+    "reason": "answers automated reading with a bot check"
+   },
+   {
+    "name": "Pazarama",
+    "reason": "answers automated reading with a bot check"
+   },
+   {
+    "name": "PttAVM",
+    "reason": "answers automated reading with a bot check"
+   },
+   {
+    "name": "Sinerji",
+    "reason": "answers automated reading with a bot check"
+   },
+   {
+    "name": "Teknosa",
+    "reason": "answers automated reading with a bot check"
+   },
+   {
+    "name": "Trendyol",
+    "reason": "answers automated reading with a bot check"
+   },
+   {
+    "name": "Vatan Bilgisayar",
+    "reason": "refuses automated reading (HTTP 403)"
+   },
+   {
+    "name": "Çiçeksepeti",
+    "reason": "answers automated reading with a bot check"
+   }
+  ]
+ }
+}
