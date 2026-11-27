@@ -1,9 +1,9 @@
 {
- "collected_at": "2026-11-27T13:14:04+00:00",
+ "collected_at": "2026-11-27T14:55:03+00:00",
  "rate": {
-  "usd_try": 50.7871,
+  "usd_try": 50.7873,
   "source": "Truncgil Finans",
-  "at": "2026-11-27T13:16:13+00:00"
+  "at": "2026-11-27T14:55:49+00:00"
  },
  "models": [
   {
@@ -21,7 +21,7 @@
      "price_try": 642.6,
      "status": "in_stock",
      "note": "",
-     "checked_at": "2026-11-27T13:14:04+00:00",
+     "checked_at": "2026-11-27T14:55:03+00:00",
      "stale": false
     },
     {
@@ -33,7 +33,7 @@
      "price_try": 645.73,
      "status": "in_stock",
      "note": "",
-     "checked_at": "2026-11-27T13:14:04+00:00",
+     "checked_at": "2026-11-27T14:55:03+00:00",
      "stale": false
     },
     {
@@ -45,7 +45,7 @@
      "price_try": 646.5,
      "status": "in_stock",
      "note": "",
-     "checked_at": "2026-11-27T13:14:04+00:00",
+     "checked_at": "2026-11-27T14:55:03+00:00",
      "stale": false
     },
     {
@@ -57,7 +57,7 @@
      "price_try": 739.5,
      "status": "in_stock",
      "note": "",
-     "checked_at": "2026-11-27T13:14:04+00:00",
+     "checked_at": "2026-11-27T14:55:03+00:00",
      "stale": false
     }
    ]
@@ -77,7 +77,7 @@
      "price_try": 642.6,
      "status": "in_stock",
      "note": "",
-     "checked_at": "2026-11-27T13:14:04+00:00",
+     "checked_at": "2026-11-27T14:55:03+00:00",
      "stale": false
     },
     {
@@ -89,7 +89,7 @@
      "price_try": 645.73,
      "status": "in_stock",
      "note": "",
-     "checked_at": "2026-11-27T13:14:04+00:00",
+     "checked_at": "2026-11-27T14:55:03+00:00",
      "stale": false
     },
     {
@@ -101,7 +101,7 @@
      "price_try": 646.5,
      "status": "in_stock",
      "note": "",
-     "checked_at": "2026-11-27T13:14:04+00:00",
+     "checked_at": "2026-11-27T14:55:03+00:00",
      "stale": false
     },
     {
@@ -113,7 +113,7 @@
      "price_try": 739.5,
      "status": "in_stock",
      "note": "",
-     "checked_at": "2026-11-27T13:14:04+00:00",
+     "checked_at": "2026-11-27T14:55:03+00:00",
      "stale": false
     },
     {
@@ -125,7 +125,7 @@
      "price_try": 645.73,
      "status": "out_of_stock",
      "note": "",
-     "checked_at": "2026-11-27T13:14:04+00:00",
+     "checked_at": "2026-11-27T14:55:03+00:00",
      "stale": false
     }
    ]
@@ -145,7 +145,7 @@
      "price_try": 684.0,
      "status": "out_of_stock",
      "note": "",
-     "checked_at": "2026-11-27T13:14:04+00:00",
+     "checked_at": "2026-11-27T14:55:03+00:00",
      "stale": false
     },
     {
@@ -157,7 +157,7 @@
      "price_try": 734.4,
      "status": "out_of_stock",
      "note": "",
-     "checked_at": "2026-11-27T13:14:04+00:00",
+     "checked_at": "2026-11-27T14:55:03+00:00",
      "stale": false
     },
     {
@@ -169,7 +169,7 @@
      "price_try": 734.82,
      "status": "out_of_stock",
      "note": "",
-     "checked_at": "2026-11-27T13:14:04+00:00",
+     "checked_at": "2026-11-27T14:55:03+00:00",
      "stale": false
     },
     {
@@ -181,7 +181,7 @@
      "price_try": 850.5,
      "status": "out_of_stock",
      "note": "",
-     "checked_at": "2026-11-27T13:14:04+00:00",
+     "checked_at": "2026-11-27T14:55:03+00:00",
      "stale": false
     },
     {
@@ -193,7 +193,7 @@
      "price_try": 851.39,
      "status": "out_of_stock",
      "note": "",
-     "checked_at": "2026-11-27T13:14:04+00:00",
+     "checked_at": "2026-11-27T14:55:03+00:00",
      "stale": false
     }
    ]
@@ -213,7 +213,7 @@
      "price_try": 684.0,
      "status": "out_of_stock",
      "note": "",
-     "checked_at": "2026-11-27T13:14:04+00:00",
+     "checked_at": "2026-11-27T14:55:03+00:00",
      "stale": false
     },
     {
@@ -225,7 +225,7 @@
      "price_try": 734.4,
      "status": "out_of_stock",
      "note": "",
-     "checked_at": "2026-11-27T13:14:04+00:00",
+     "checked_at": "2026-11-27T14:55:03+00:00",
      "stale": false
     },
     {
@@ -237,7 +237,7 @@
      "price_try": 734.82,
      "status": "out_of_stock",
      "note": "",
-     "checked_at": "2026-11-27T13:14:04+00:00",
+     "checked_at": "2026-11-27T14:55:03+00:00",
      "stale": false
     },
     {
@@ -249,7 +249,7 @@
      "price_try": 851.39,
      "status": "out_of_stock",
      "note": "",
-     "checked_at": "2026-11-27T13:14:04+00:00",
+     "checked_at": "2026-11-27T14:55:03+00:00",
      "stale": false
     },
     {
@@ -261,7 +261,7 @@
      "price_try": 1017.0,
      "status": "out_of_stock",
      "note": "",
-     "checked_at": "2026-11-27T13:14:04+00:00",
+     "checked_at": "2026-11-27T14:55:03+00:00",
      "stale": false
     }
    ]
@@ -278,10 +278,10 @@
      "seller": "",
      "title": "ELEGOO PLA Filament Black 1Kg",
      "url": "https://www.3dteknomarket.com/products/elegoo-pla-filament-black-1kg",
-     "price_try": 516.91,
+     "price_try": 517.09,
      "status": "in_stock",
      "note": "",
-     "checked_at": "2026-11-27T13:14:04+00:00",
+     "checked_at": "2026-11-27T14:55:03+00:00",
      "stale": false
     },
     {
@@ -293,7 +293,7 @@
      "price_try": 540.0,
      "status": "in_stock",
      "note": "",
-     "checked_at": "2026-11-27T13:14:04+00:00",
+     "checked_at": "2026-11-27T14:55:03+00:00",
      "stale": false
     },
     {
@@ -305,7 +305,7 @@
      "price_try": 480.0,
      "status": "out_of_stock",
      "note": "",
-     "checked_at": "2026-11-27T13:14:04+00:00",
+     "checked_at": "2026-11-27T14:55:03+00:00",
      "stale": false
     },
     {
@@ -317,7 +317,7 @@
      "price_try": 499.0,
      "status": "out_of_stock",
      "note": "",
-     "checked_at": "2026-11-27T13:14:04+00:00",
+     "checked_at": "2026-11-27T14:55:03+00:00",
      "stale": false
     },
     {
@@ -329,7 +329,7 @@
      "price_try": 577.5,
      "status": "out_of_stock",
      "note": "",
-     "checked_at": "2026-11-27T13:14:04+00:00",
+     "checked_at": "2026-11-27T14:55:03+00:00",
      "stale": false
     }
    ]
@@ -341,15 +341,27 @@
    "name": "Elegoo PLA White",
    "offers": [
     {
+     "store": "Robo90",
+     "store_id": "robo90",
+     "seller": "",
+     "title": "ELEGOO PLA Filament Beyaz 1Kg",
+     "url": "https://www.robo90.com/elegoo-pla-filament-beyaz-1kg",
+     "price_try": 480.0,
+     "status": "in_stock",
+     "note": "",
+     "checked_at": "2026-11-27T14:55:03+00:00",
+     "stale": false
+    },
+    {
      "store": "3D Tekno Market",
      "store_id": "3dteknomarket",
      "seller": "",
      "title": "ELEGOO PLA Filament White 1Kg",
      "url": "https://www.3dteknomarket.com/products/elegoo-pla-filament-white-1kg",
-     "price_try": 516.91,
+     "price_try": 517.09,
      "status": "in_stock",
      "note": "",
-     "checked_at": "2026-11-27T13:14:04+00:00",
+     "checked_at": "2026-11-27T14:55:03+00:00",
      "stale": false
     },
     {
@@ -361,7 +373,7 @@
      "price_try": 540.0,
      "status": "in_stock",
      "note": "",
-     "checked_at": "2026-11-27T13:14:04+00:00",
+     "checked_at": "2026-11-27T14:55:03+00:00",
      "stale": false
     },
     {
@@ -373,19 +385,7 @@
      "price_try": 558.0,
      "status": "in_stock",
      "note": "",
-     "checked_at": "2026-11-27T13:14:04+00:00",
-     "stale": false
-    },
-    {
-     "store": "Robo90",
-     "store_id": "robo90",
-     "seller": "",
-     "title": "ELEGOO PLA Filament Beyaz 1Kg",
-     "url": "https://www.robo90.com/elegoo-pla-filament-beyaz-1kg",
-     "price_try": 480.0,
-     "status": "out_of_stock",
-     "note": "",
-     "checked_at": "2026-11-27T13:14:04+00:00",
+     "checked_at": "2026-11-27T14:55:03+00:00",
      "stale": false
     },
     {
@@ -397,7 +397,7 @@
      "price_try": 603.07,
      "status": "out_of_stock",
      "note": "",
-     "checked_at": "2026-11-27T13:14:04+00:00",
+     "checked_at": "2026-11-27T14:55:03+00:00",
      "stale": false
     }
    ]
@@ -417,7 +417,7 @@
      "price_try": 610.0,
      "status": "in_stock",
      "note": "",
-     "checked_at": "2026-11-27T13:14:04+00:00",
+     "checked_at": "2026-11-27T14:55:03+00:00",
      "stale": false
     },
     {
@@ -429,7 +429,7 @@
      "price_try": 653.75,
      "status": "in_stock",
      "note": "",
-     "checked_at": "2026-11-27T13:14:04+00:00",
+     "checked_at": "2026-11-27T14:55:03+00:00",
      "stale": false
     }
    ]
@@ -449,7 +449,7 @@
      "price_try": 610.0,
      "status": "in_stock",
      "note": "",
-     "checked_at": "2026-11-27T13:14:04+00:00",
+     "checked_at": "2026-11-27T14:55:03+00:00",
      "stale": false
     },
     {
@@ -461,7 +461,7 @@
      "price_try": 653.75,
      "status": "in_stock",
      "note": "",
-     "checked_at": "2026-11-27T13:14:04+00:00",
+     "checked_at": "2026-11-27T14:55:03+00:00",
      "stale": false
     }
    ]
@@ -481,7 +481,7 @@
      "price_try": 648.0,
      "status": "in_stock",
      "note": "",
-     "checked_at": "2026-11-27T13:14:04+00:00",
+     "checked_at": "2026-11-27T14:55:03+00:00",
      "stale": false
     },
     {
@@ -491,9 +491,9 @@
      "title": "Porima 3D 1.75 mm PLA Filament - Siyah",
      "url": "https://www.robotistan.com/porima-3d-175-mm-pla-filament-siyah",
      "price_try": 813.97,
-     "status": "in_stock",
+     "status": "out_of_stock",
      "note": "",
-     "checked_at": "2026-11-27T13:14:04+00:00",
+     "checked_at": "2026-11-27T14:55:03+00:00",
      "stale": false
     }
    ]
@@ -513,7 +513,7 @@
      "price_try": 648.0,
      "status": "out_of_stock",
      "note": "",
-     "checked_at": "2026-11-27T13:14:04+00:00",
+     "checked_at": "2026-11-27T14:55:03+00:00",
      "stale": false
     },
     {
@@ -525,7 +525,7 @@
      "price_try": 813.97,
      "status": "out_of_stock",
      "note": "",
-     "checked_at": "2026-11-27T13:14:04+00:00",
+     "checked_at": "2026-11-27T14:55:03+00:00",
      "stale": false
     }
    ]
@@ -545,7 +545,7 @@
      "price_try": 712.8,
      "status": "in_stock",
      "note": "",
-     "checked_at": "2026-11-27T13:14:04+00:00",
+     "checked_at": "2026-11-27T14:55:03+00:00",
      "stale": false
     }
    ]
@@ -565,7 +565,7 @@
      "price_try": 712.8,
      "status": "in_stock",
      "note": "",
-     "checked_at": "2026-11-27T13:14:04+00:00",
+     "checked_at": "2026-11-27T14:55:03+00:00",
      "stale": false
     },
     {
@@ -577,7 +577,7 @@
      "price_try": 857.27,
      "status": "out_of_stock",
      "note": "",
-     "checked_at": "2026-11-27T13:14:04+00:00",
+     "checked_at": "2026-11-27T14:55:03+00:00",
      "stale": false
     }
    ]
@@ -597,7 +597,7 @@
      "price_try": 800.06,
      "status": "in_stock",
      "note": "",
-     "checked_at": "2026-11-27T13:14:04+00:00",
+     "checked_at": "2026-11-27T14:55:03+00:00",
      "stale": false
     },
     {
@@ -609,7 +609,7 @@
      "price_try": 612.0,
      "status": "out_of_stock",
      "note": "",
-     "checked_at": "2026-11-27T13:14:04+00:00",
+     "checked_at": "2026-11-27T14:55:03+00:00",
      "stale": false
     },
     {
@@ -621,7 +621,7 @@
      "price_try": 645.0,
      "status": "out_of_stock",
      "note": "",
-     "checked_at": "2026-11-27T13:14:04+00:00",
+     "checked_at": "2026-11-27T14:55:03+00:00",
      "stale": false
     },
     {
@@ -633,7 +633,7 @@
      "price_try": 720.0,
      "status": "out_of_stock",
      "note": "",
-     "checked_at": "2026-11-27T13:14:04+00:00",
+     "checked_at": "2026-11-27T14:55:03+00:00",
      "stale": false
     }
    ]
@@ -653,7 +653,7 @@
      "price_try": 800.06,
      "status": "in_stock",
      "note": "",
-     "checked_at": "2026-11-27T13:14:04+00:00",
+     "checked_at": "2026-11-27T14:55:03+00:00",
      "stale": false
     },
     {
@@ -665,7 +665,7 @@
      "price_try": 612.0,
      "status": "out_of_stock",
      "note": "",
-     "checked_at": "2026-11-27T13:14:04+00:00",
+     "checked_at": "2026-11-27T14:55:03+00:00",
      "stale": false
     },
     {
@@ -677,7 +677,7 @@
      "price_try": 645.0,
      "status": "out_of_stock",
      "note": "",
-     "checked_at": "2026-11-27T13:14:04+00:00",
+     "checked_at": "2026-11-27T14:55:03+00:00",
      "stale": false
     },
     {
@@ -689,7 +689,7 @@
      "price_try": 720.0,
      "status": "out_of_stock",
      "note": "",
-     "checked_at": "2026-11-27T13:14:04+00:00",
+     "checked_at": "2026-11-27T14:55:03+00:00",
      "stale": false
     }
    ]
@@ -709,7 +709,7 @@
      "price_try": 532.5,
      "status": "in_stock",
      "note": "",
-     "checked_at": "2026-11-27T13:14:04+00:00",
+     "checked_at": "2026-11-27T14:55:03+00:00",
      "stale": false
     },
     {
@@ -721,7 +721,7 @@
      "price_try": 552.61,
      "status": "in_stock",
      "note": "",
-     "checked_at": "2026-11-27T13:14:04+00:00",
+     "checked_at": "2026-11-27T14:55:03+00:00",
      "stale": false
     },
     {
@@ -733,7 +733,7 @@
      "price_try": 480.0,
      "status": "out_of_stock",
      "note": "",
-     "checked_at": "2026-11-27T13:14:04+00:00",
+     "checked_at": "2026-11-27T14:55:03+00:00",
      "stale": false
     },
     {
@@ -745,7 +745,7 @@
      "price_try": 600.0,
      "status": "out_of_stock",
      "note": "",
-     "checked_at": "2026-11-27T13:14:04+00:00",
+     "checked_at": "2026-11-27T14:55:03+00:00",
      "stale": false
     },
     {
@@ -757,7 +757,7 @@
      "price_try": 600.0,
      "status": "out_of_stock",
      "note": "",
-     "checked_at": "2026-11-27T13:14:04+00:00",
+     "checked_at": "2026-11-27T14:55:03+00:00",
      "stale": false
     },
     {
@@ -769,7 +769,7 @@
      "price_try": 622.5,
      "status": "out_of_stock",
      "note": "",
-     "checked_at": "2026-11-27T13:14:04+00:00",
+     "checked_at": "2026-11-27T14:55:03+00:00",
      "stale": false
     },
     {
@@ -781,7 +781,7 @@
      "price_try": 673.2,
      "status": "out_of_stock",
      "note": "",
-     "checked_at": "2026-11-27T13:14:04+00:00",
+     "checked_at": "2026-11-27T14:55:03+00:00",
      "stale": false
     }
    ]
@@ -801,7 +801,7 @@
      "price_try": 517.5,
      "status": "in_stock",
      "note": "",
-     "checked_at": "2026-11-27T13:14:04+00:00",
+     "checked_at": "2026-11-27T14:55:03+00:00",
      "stale": false
     },
     {
@@ -813,7 +813,7 @@
      "price_try": 480.0,
      "status": "out_of_stock",
      "note": "",
-     "checked_at": "2026-11-27T13:14:04+00:00",
+     "checked_at": "2026-11-27T14:55:03+00:00",
      "stale": false
     },
     {
@@ -825,7 +825,7 @@
      "price_try": 552.61,
      "status": "out_of_stock",
      "note": "",
-     "checked_at": "2026-11-27T13:14:04+00:00",
+     "checked_at": "2026-11-27T14:55:03+00:00",
      "stale": false
     },
     {
@@ -837,7 +837,7 @@
      "price_try": 600.0,
      "status": "out_of_stock",
      "note": "",
-     "checked_at": "2026-11-27T13:14:04+00:00",
+     "checked_at": "2026-11-27T14:55:03+00:00",
      "stale": false
     },
     {
@@ -849,7 +849,7 @@
      "price_try": 600.0,
      "status": "out_of_stock",
      "note": "",
-     "checked_at": "2026-11-27T13:14:04+00:00",
+     "checked_at": "2026-11-27T14:55:03+00:00",
      "stale": false
     },
     {
@@ -861,7 +861,7 @@
      "price_try": 618.23,
      "status": "out_of_stock",
      "note": "",
-     "checked_at": "2026-11-27T13:14:04+00:00",
+     "checked_at": "2026-11-27T14:55:03+00:00",
      "stale": false
     },
     {
@@ -873,7 +873,7 @@
      "price_try": 622.5,
      "status": "out_of_stock",
      "note": "",
-     "checked_at": "2026-11-27T13:14:04+00:00",
+     "checked_at": "2026-11-27T14:55:03+00:00",
      "stale": false
     },
     {
@@ -885,7 +885,7 @@
      "price_try": 673.2,
      "status": "out_of_stock",
      "note": "",
-     "checked_at": "2026-11-27T13:14:04+00:00",
+     "checked_at": "2026-11-27T14:55:03+00:00",
      "stale": false
     }
    ]
@@ -905,7 +905,7 @@
      "price_try": 979.2,
      "status": "in_stock",
      "note": "",
-     "checked_at": "2026-11-27T13:14:04+00:00",
+     "checked_at": "2026-11-27T14:55:03+00:00",
      "stale": false
     },
     {
@@ -917,7 +917,7 @@
      "price_try": 990.75,
      "status": "in_stock",
      "note": "",
-     "checked_at": "2026-11-27T13:14:04+00:00",
+     "checked_at": "2026-11-27T14:55:03+00:00",
      "stale": false
     },
     {
@@ -929,7 +929,7 @@
      "price_try": 999.0,
      "status": "in_stock",
      "note": "",
-     "checked_at": "2026-11-27T13:14:04+00:00",
+     "checked_at": "2026-11-27T14:55:03+00:00",
      "stale": false
     },
     {
@@ -938,10 +938,10 @@
      "seller": "",
      "title": "Bambu Lab PLA Basic-Black 1Kg Filament",
      "url": "https://store.metatechtr.com/bambu-lab-pla-basic-black-1kg-filament",
-     "price_try": 896.67,
+     "price_try": 896.81,
      "status": "out_of_stock",
      "note": "",
-     "checked_at": "2026-11-27T13:14:04+00:00",
+     "checked_at": "2026-11-27T14:55:03+00:00",
      "stale": false
     },
     {
@@ -950,10 +950,10 @@
      "seller": "",
      "title": "Bambu PLA Pure-Absolute Black- with Bambu Reusable Spool 1Kg Filament",
      "url": "https://store.metatechtr.com/bambu-pla-pure-absolute-black-with-bambu-reusable-spool-1kg-filament",
-     "price_try": 1076.0,
+     "price_try": 1076.17,
      "status": "out_of_stock",
      "note": "",
-     "checked_at": "2026-11-27T13:14:04+00:00",
+     "checked_at": "2026-11-27T14:55:03+00:00",
      "stale": false
     },
     {
@@ -965,7 +965,7 @@
      "price_try": 1127.58,
      "status": "out_of_stock",
      "note": "",
-     "checked_at": "2026-11-27T13:14:04+00:00",
+     "checked_at": "2026-11-27T14:55:03+00:00",
      "stale": false
     }
    ]
@@ -982,10 +982,10 @@
      "seller": "",
      "title": "Bambu Lab PLA Basic-Black (Refill) 1Kg Filament",
      "url": "https://store.metatechtr.com/bambu-lab-pla-basic-black-refill-1kg-filament",
-     "price_try": 762.17,
+     "price_try": 762.29,
      "status": "in_stock",
      "note": "",
-     "checked_at": "2026-11-27T13:14:04+00:00",
+     "checked_at": "2026-11-27T14:55:03+00:00",
      "stale": false
     },
     {
@@ -994,10 +994,10 @@
      "seller": "",
      "title": "Bambu PLA Pure-Absolute Black Refill 1Kg Filament",
      "url": "https://store.metatechtr.com/bambu-pla-pure-absolute-black-refill-1kg-filament",
-     "price_try": 896.67,
+     "price_try": 896.81,
      "status": "out_of_stock",
      "note": "",
-     "checked_at": "2026-11-27T13:14:04+00:00",
+     "checked_at": "2026-11-27T14:55:03+00:00",
      "stale": false
     },
     {
@@ -1009,7 +1009,7 @@
      "price_try": 1127.58,
      "status": "out_of_stock",
      "note": "",
-     "checked_at": "2026-11-27T13:14:04+00:00",
+     "checked_at": "2026-11-27T14:55:03+00:00",
      "stale": false
     },
     {
@@ -1021,7 +1021,7 @@
      "price_try": 1160.71,
      "status": "out_of_stock",
      "note": "",
-     "checked_at": "2026-11-27T13:14:04+00:00",
+     "checked_at": "2026-11-27T14:55:03+00:00",
      "stale": false
     }
    ]
@@ -1041,7 +1041,7 @@
      "price_try": 990.75,
      "status": "in_stock",
      "note": "",
-     "checked_at": "2026-11-27T13:14:04+00:00",
+     "checked_at": "2026-11-27T14:55:03+00:00",
      "stale": false
     },
     {
@@ -1050,10 +1050,10 @@
      "seller": "",
      "title": "Bambu Lab PLA Basic-Jade White 1Kg Filament",
      "url": "https://store.metatechtr.com/bambu-lab-pla-basic-jade-white-1kg-filament",
-     "price_try": 896.67,
+     "price_try": 896.81,
      "status": "out_of_stock",
      "note": "",
-     "checked_at": "2026-11-27T13:14:04+00:00",
+     "checked_at": "2026-11-27T14:55:03+00:00",
      "stale": false
     },
     {
@@ -1062,10 +1062,10 @@
      "seller": "",
      "title": "Bambu PLA Pure-Pure White- with Bambu Reusable Spool 1Kg Filament",
      "url": "https://store.metatechtr.com/bambu-pla-pure-pure-white-with-bambu-reusable-spool-1kg-filament",
-     "price_try": 1076.0,
+     "price_try": 1076.17,
      "status": "out_of_stock",
      "note": "",
-     "checked_at": "2026-11-27T13:14:04+00:00",
+     "checked_at": "2026-11-27T14:55:03+00:00",
      "stale": false
     }
    ]
@@ -1082,10 +1082,10 @@
      "seller": "",
      "title": "Bambu Lab PLA Basic-Jade White (Refill) 1Kg Filament",
      "url": "https://store.metatechtr.com/bambu-lab-pla-basic-jade-white-refill-1kg-filament",
-     "price_try": 762.17,
+     "price_try": 762.29,
      "status": "in_stock",
      "note": "",
-     "checked_at": "2026-11-27T13:14:04+00:00",
+     "checked_at": "2026-11-27T14:55:03+00:00",
      "stale": false
     },
     {
@@ -1094,10 +1094,10 @@
      "seller": "",
      "title": "Bambu PLA Pure-Pure White Refill 1Kg Filament",
      "url": "https://store.metatechtr.com/bambu-lab-pla-pure-pure-white-refill-1kg-filament",
-     "price_try": 896.67,
+     "price_try": 896.81,
      "status": "out_of_stock",
      "note": "",
-     "checked_at": "2026-11-27T13:14:04+00:00",
+     "checked_at": "2026-11-27T14:55:03+00:00",
      "stale": false
     }
    ]
@@ -1114,10 +1114,10 @@
      "seller": "",
      "title": "Bambu PETG Basic-Black 1Kg Filament",
      "url": "https://store.metatechtr.com/bambu-petg-basic-black-1kg-filament",
-     "price_try": 896.67,
+     "price_try": 896.81,
      "status": "out_of_stock",
      "note": "",
-     "checked_at": "2026-11-27T13:14:04+00:00",
+     "checked_at": "2026-11-27T14:55:03+00:00",
      "stale": false
     },
     {
@@ -1129,7 +1129,7 @@
      "price_try": 973.01,
      "status": "out_of_stock",
      "note": "",
-     "checked_at": "2026-11-27T13:14:04+00:00",
+     "checked_at": "2026-11-27T14:55:03+00:00",
      "stale": false
     },
     {
@@ -1138,10 +1138,10 @@
      "seller": "",
      "title": "Bambu Lab PETG Basic-Black 1Kg Filament",
      "url": "https://store.metatechtr.com/bambu-lab-petg-basic-black-1kg-filament",
-     "price_try": 1153.78,
+     "price_try": 1153.96,
      "status": "out_of_stock",
      "note": "",
-     "checked_at": "2026-11-27T13:14:04+00:00",
+     "checked_at": "2026-11-27T14:55:03+00:00",
      "stale": false
     }
    ]
@@ -1158,10 +1158,10 @@
      "seller": "",
      "title": "Bambu PETG Basic-Black Refill 1Kg Filament",
      "url": "https://store.metatechtr.com/bambu-petg-basic-black-refill-1kg-filament",
-     "price_try": 762.17,
+     "price_try": 762.29,
      "status": "in_stock",
      "note": "",
-     "checked_at": "2026-11-27T13:14:04+00:00",
+     "checked_at": "2026-11-27T14:55:03+00:00",
      "stale": false
     },
     {
@@ -1170,10 +1170,10 @@
      "seller": "",
      "title": "Bambu Lab PETG Basic-Black (Refill) 1Kg Filament",
      "url": "https://store.metatechtr.com/bambu-lab-petg-basic-black-refill-1kg-filament",
-     "price_try": 949.44,
+     "price_try": 949.6,
      "status": "out_of_stock",
      "note": "",
-     "checked_at": "2026-11-27T13:14:04+00:00",
+     "checked_at": "2026-11-27T14:55:03+00:00",
      "stale": false
     },
     {
@@ -1182,10 +1182,10 @@
      "seller": "",
      "title": "Bambu Lab PETG HF-Black (Refill) 1Kg Filament",
      "url": "https://store.metatechtr.com/bambu-lab-petg-hf-black-refill-1kg-filament",
-     "price_try": 1031.13,
+     "price_try": 1031.3,
      "status": "out_of_stock",
      "note": "",
-     "checked_at": "2026-11-27T13:14:04+00:00",
+     "checked_at": "2026-11-27T14:55:03+00:00",
      "stale": false
     }
    ]
@@ -1202,10 +1202,10 @@
      "seller": "",
      "title": "Bambu PETG Basic-White- with Bambu Reusable Spool 1Kg Filament",
      "url": "https://store.metatechtr.com/bambu-petg-basic-white-with-bambu-reusable-spool-1kg-filament",
-     "price_try": 896.67,
+     "price_try": 896.81,
      "status": "out_of_stock",
      "note": "",
-     "checked_at": "2026-11-27T13:14:04+00:00",
+     "checked_at": "2026-11-27T14:55:03+00:00",
      "stale": false
     },
     {
@@ -1217,7 +1217,7 @@
      "price_try": 973.01,
      "status": "out_of_stock",
      "note": "",
-     "checked_at": "2026-11-27T13:14:04+00:00",
+     "checked_at": "2026-11-27T14:55:03+00:00",
      "stale": false
     },
     {
@@ -1226,10 +1226,10 @@
      "seller": "",
      "title": "Bambu Lab PETG Basic-White 1Kg Filament",
      "url": "https://store.metatechtr.com/bambu-lab-petg-basic-white-1kg-filament",
-     "price_try": 1153.78,
+     "price_try": 1153.96,
      "status": "out_of_stock",
      "note": "",
-     "checked_at": "2026-11-27T13:14:04+00:00",
+     "checked_at": "2026-11-27T14:55:03+00:00",
      "stale": false
     }
    ]
@@ -1246,10 +1246,10 @@
      "seller": "",
      "title": "Bambu PETG Basic-White Refill 1Kg Filament",
      "url": "https://store.metatechtr.com/bambu-petg-basic-white-refill-1kg-filament",
-     "price_try": 762.17,
+     "price_try": 762.29,
      "status": "out_of_stock",
      "note": "",
-     "checked_at": "2026-11-27T13:14:04+00:00",
+     "checked_at": "2026-11-27T14:55:03+00:00",
      "stale": false
     },
     {
@@ -1258,10 +1258,10 @@
      "seller": "",
      "title": "Bambu Lab PETG Basic-White (Refill) 1Kg Filament",
      "url": "https://store.metatechtr.com/bambu-lab-petg-basic-white-refill-1kg-filament",
-     "price_try": 949.44,
+     "price_try": 949.6,
      "status": "out_of_stock",
      "note": "",
-     "checked_at": "2026-11-27T13:14:04+00:00",
+     "checked_at": "2026-11-27T14:55:03+00:00",
      "stale": false
     },
     {
@@ -1270,10 +1270,10 @@
      "seller": "",
      "title": "Bambu Lab PETG HF-White (Refill) 1Kg Filament",
      "url": "https://store.metatechtr.com/bambu-lab-petg-hf-white-refill-1kg-filament",
-     "price_try": 1031.13,
+     "price_try": 1031.3,
      "status": "out_of_stock",
      "note": "",
-     "checked_at": "2026-11-27T13:14:04+00:00",
+     "checked_at": "2026-11-27T14:55:03+00:00",
      "stale": false
     }
    ]
