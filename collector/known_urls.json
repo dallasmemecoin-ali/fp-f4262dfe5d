@@ -72,7 +72,7 @@
    "https://www.robotistan.com/tinylab-hyper-3d-175-mm-black-pla-fast-filament-en",
    "https://www.robotistan.com/tinylab-hyper-3d-175-mm-siyah-pla-hizli-filament"
   ],
-  "discovered_at": "2026-11-27T03:40:17+00:00"
+  "discovered_at": "2026-11-27T03:47:48+00:00"
  },
  "robo90": {
   "urls": [
@@ -80,11 +80,7 @@
    "https://www.robo90.com/creality-cr-petg-beyaz-filament-175mm-1kg",
    "https://www.robo90.com/creality-cr-pla-filament-siyah-1-kg",
    "https://www.robo90.com/creality-cr-pla-filament-fildisi-beyaz-1-kg",
-   "https://www.robo90.com/creality-ender-fast-pla-filament-beyaz-175mm-1kg",
-   "https://www.robo90.com/creality-ender-fast-pla-filament-siyah-175mm-1kg",
    "https://www.robo90.com/bambu-lab-pla-basic-filament-siyah-1-kg-makarasiz",
-   "https://www.robo90.com/creality-soleyin-ultra-pla-beyaz",
-   "https://www.robo90.com/creality-soleyin-ultra-pla-siyah",
    "https://www.robo90.com/elegoo-pla-filament-siyah-1kg",
    "https://www.robo90.com/elegoo-pla-filament-beyaz-1kg",
    "https://www.robo90.com/creality-soleyin-basic-petg-filament-beyaz-1-kg",
@@ -102,6 +98,8 @@
    "https://www.robo90.com/beta-pla-matte-filament-koyu-siyah-ebony-1-kg",
    "https://www.robo90.com/beta-pla-matte-filament-siyah-175mm-1-kg",
    "https://www.robo90.com/beta-pla-mystic-silk-filament-uc-renk-kirmizi-altin-siyah-175mm-1kg",
+   "https://www.robo90.com/creality-ender-fast-pla-filament-beyaz-175mm-1kg",
+   "https://www.robo90.com/creality-ender-fast-pla-filament-siyah-175mm-1kg",
    "https://www.robo90.com/creality-ender-pla-filament-beyaz-175mm-1kg",
    "https://www.robo90.com/creality-ender-pla-filament-siyah-175mm-1kg",
    "https://www.robo90.com/creality-hyper-lw-pla-beyaz-filament-175mm-1kg",
@@ -114,8 +112,10 @@
    "https://www.robo90.com/creality-hyper-pla-rfid-beyaz-filament-175mm-1kg",
    "https://www.robo90.com/creality-hyper-pla-rfid-siyah-filament-175mm-1-kg",
    "https://www.robo90.com/creality-hyper-pla-siyah-filament-175mm-1kg",
+   "https://www.robo90.com/creality-soleyin-ultra-pla-beyaz",
    "https://www.robo90.com/creality-soleyin-ultra-pla-matte-beyaz",
    "https://www.robo90.com/creality-soleyin-ultra-pla-matte-siyah",
+   "https://www.robo90.com/creality-soleyin-ultra-pla-siyah",
    "https://www.robo90.com/esun-hyper-pla-filament-beyaz-175mm-1kg",
    "https://www.robo90.com/esun-hyper-pla-filament-kemik-beyaz-175mm-1kg",
    "https://www.robo90.com/esun-hyper-pla-filament-siyah-175mm-1kg",
@@ -188,7 +188,7 @@
    "https://www.robo90.com/sunlu-high-speed-pla-filament-siyah-175mm-1kg",
    "https://www.robo90.com/sunlu-lw-pla-filament-beyaz-800-g-1"
   ],
-  "discovered_at": "2026-11-27T03:40:17+00:00"
+  "discovered_at": "2026-11-27T03:47:48+00:00"
  },
  "porima": {
   "urls": [],
@@ -199,8 +199,6 @@
   "urls": [
    "https://3dcim.com/creality-cr-pla-filament-ivory-beyaz",
    "https://3dcim.com/creality-cr-pla-filament-beyaz",
-   "https://3dcim.com/creality-ender-fast-pla-filament-siyah",
-   "https://3dcim.com/creality-ender-fast-pla-beyaz",
    "https://3dcim.com/petg-basic-black",
    "https://3dcim.com/creality-cr-petg-beyaz",
    "https://3dcim.com/creality-cr-pla-siyah",
@@ -223,8 +221,7 @@
    "https://3dcim.com/creality-soleyin-basic-petg-white-filament",
    "https://3dcim.com/sunlu-pla-black-filament-1.75mm-1-kg-3414",
    "https://3dcim.com/sunlu-pla-bone-white-filament-1.75mm-1-kg-3417",
-   "https://3dcim.com/sunlu-pla-white-filament-1.75mm-1-kg-3444",
-   "https://3dcim.com/sunlu-pla-transparent-mist-black-filament-1.75mm-1-kg-3448"
+   "https://3dcim.com/sunlu-pla-white-filament-1.75mm-1-kg-3444"
   ],
   "skip": [
    "https://3dcim.com/10-kg-bambu-lab-pla-basic-jade-beyaz-filament-1.75mm-1kg-3074",
@@ -254,6 +251,8 @@
    "https://3dcim.com/beta-pla-matte-siyah-filament-1.75mm-1kg-2655",
    "https://3dcim.com/beta-pla-siyah-filament",
    "https://3dcim.com/creality-cr-pla-silk-white",
+   "https://3dcim.com/creality-ender-fast-pla-beyaz",
+   "https://3dcim.com/creality-ender-fast-pla-filament-siyah",
    "https://3dcim.com/creality-hyper-foam-pla-black",
    "https://3dcim.com/creality-hyper-foam-pla-white",
    "https://3dcim.com/creality-hyper-petg-beyaz",
@@ -321,9 +320,10 @@
    "https://3dcim.com/soleyin-ultra-pla-siyah-1.75-mm-2340",
    "https://3dcim.com/sunlu-pla-matte-black-filament-1.75mm-1-kg-3484",
    "https://3dcim.com/sunlu-pla-matte-bone-white-filament-1.75mm-1-kg-3485",
-   "https://3dcim.com/sunlu-pla-matte-white-filament-1.75mm-1-kg-3497"
+   "https://3dcim.com/sunlu-pla-matte-white-filament-1.75mm-1-kg-3497",
+   "https://3dcim.com/sunlu-pla-transparent-mist-black-filament-1.75mm-1-kg-3448"
   ],
-  "discovered_at": "2026-11-27T03:40:17+00:00"
+  "discovered_at": "2026-11-27T03:47:48+00:00"
  },
  "3dteknomarket": {
   "urls": [],
@@ -342,7 +342,7 @@
    "https://www.direnc.net/siyah-petg-filament-175mm-1kg-tri-d",
    "https://www.direnc.net/siyah-pla-plus-filament-175mm-1kg-tri-d"
   ],
-  "discovered_at": "2026-11-27T03:40:17+00:00"
+  "discovered_at": "2026-11-27T03:47:48+00:00"
  },
  "metatech": {
   "urls": [
@@ -429,7 +429,7 @@
    "https://store.metatechtr.com/uzy-super-pla-jet-black-1kg",
    "https://store.metatechtr.com/uzy-super-pla-signal-white-1kg"
   ],
-  "discovered_at": "2026-11-27T03:40:17+00:00"
+  "discovered_at": "2026-11-27T03:47:48+00:00"
  },
  "filamentmarketim": {
   "urls": [],
@@ -441,7 +441,7 @@
    "https://www.filamentmarketim.com/sunlu-filadryer-sp2-filament-saklama-kutusu-2x-pla-2.0-siyah-hediyeli",
    "https://www.filamentmarketim.com/sunlu-pla-carbon-fiber-filament-siyah"
   ],
-  "discovered_at": "2026-11-27T03:42:21+00:00"
+  "discovered_at": "2026-11-27T03:47:48+00:00"
  },
  "makerpazar": {
   "urls": [],
@@ -450,7 +450,7 @@
    "https://makerpazar.com/elegoo-pla-cf-karbon-fiber-filament-siyah-1-75mm-1-kg",
    "https://makerpazar.com/flashforge-hs-petg-beyaz-filament-1kg-1-75mm"
   ],
-  "discovered_at": "2026-11-27T03:42:21+00:00"
+  "discovered_at": "2026-11-27T03:47:48+00:00"
  },
  "matersan": {
   "urls": [
@@ -460,9 +460,7 @@
    "https://www.matersan.com.tr/urun/creality-cr-petg-filament-beyaz-1-75mm-1kg",
    "https://www.matersan.com.tr/urun/creality-cr-petg-filament-siyah-1-75mm-1kg",
    "https://www.matersan.com.tr/urun/elegoo-pla-filament-black-1kg",
-   "https://www.matersan.com.tr/urun/elegoo-pla-filament-white-1kg",
-   "https://www.matersan.com.tr/urun/creality-ender-fast-pla-filament-beyaz-1-75mm-1kg",
-   "https://www.matersan.com.tr/urun/creality-ender-fast-pla-filament-siyah-1-75mm-1kg"
+   "https://www.matersan.com.tr/urun/elegoo-pla-filament-white-1kg"
   ],
   "skip": [
    "https://www.matersan.com.tr/urun/basf-ultrafuse-natural-beyaz-pla-pro1-filament-1-75mm-750g",
@@ -487,6 +485,8 @@
    "https://www.matersan.com.tr/urun/creality-cr-pla-matte-filament-beyaz-1-75mm-1kg",
    "https://www.matersan.com.tr/urun/creality-cr-pla-matte-filament-siyah-1-75mm-1kg",
    "https://www.matersan.com.tr/urun/creality-cr-silk-pla-filament-beyaz-1-75mm-1kg",
+   "https://www.matersan.com.tr/urun/creality-ender-fast-pla-filament-beyaz-1-75mm-1kg",
+   "https://www.matersan.com.tr/urun/creality-ender-fast-pla-filament-siyah-1-75mm-1kg",
    "https://www.matersan.com.tr/urun/creality-ender-pla-filament-beyaz-1-75mm-1kg",
    "https://www.matersan.com.tr/urun/creality-ender-pla-filament-siyah-1-75mm-1kg",
    "https://www.matersan.com.tr/urun/creality-hyper-petg-filament-beyaz-1-75mm-1kg",
@@ -509,7 +509,7 @@
    "https://www.matersan.com.tr/urun/sunlu-pla-high-speed-filament-beyaz-1-75mm-1kg",
    "https://www.matersan.com.tr/urun/sunlu-pla-high-speed-filament-siyah-1-75mm-1kg"
   ],
-  "discovered_at": "2026-11-27T03:40:17+00:00"
+  "discovered_at": "2026-11-27T03:47:48+00:00"
  },
  "robolinkmarket": {
   "urls": [
@@ -520,8 +520,6 @@
    "https://www.robolinkmarket.com/esun-pla-basic-filament-siyah-175mm-1000gr",
    "https://www.robolinkmarket.com/esun-pla-basic-filament-beyaz-175mm-1000gr",
    "https://www.robolinkmarket.com/elegoo-pla-filament-beyaz-175mm-1000gr",
-   "https://www.robolinkmarket.com/creality-ender-fast-pla-beyaz-filament-175mm-1000gr",
-   "https://www.robolinkmarket.com/creality-ender-fast-pla-siyah-filament-175mm-1000gr",
    "https://www.robolinkmarket.com/creality-cr-petg-siyah-filament-175mm-1000gr",
    "https://www.robolinkmarket.com/elegoo-pla-filament-siyah-175mm-1000gr",
    "https://www.robolinkmarket.com/esun-petg-basic-siyah",
@@ -531,8 +529,7 @@
    "https://www.robolinkmarket.com/creality-soleyin-basic-petg-black-filament-175mm-1000gr",
    "https://www.robolinkmarket.com/sunlu-pla-filament-white-175mm-1000gr",
    "https://www.robolinkmarket.com/sunlu-pla-filament-black-175mm-1000gr",
-   "https://www.robolinkmarket.com/sunlu-pla-filament-bone-white-175mm-1000gr",
-   "https://www.robolinkmarket.com/sunlu-pla-filament-transparent-mist-black-175mm-1000gr"
+   "https://www.robolinkmarket.com/sunlu-pla-filament-bone-white-175mm-1000gr"
   ],
   "skip": [
    "https://www.robolinkmarket.com/anycubic-beyaz-pla-filament-1kg",
@@ -554,6 +551,8 @@
    "https://www.robolinkmarket.com/creality-cr-pla-matte-beyaz-filament-175mm-1000gr",
    "https://www.robolinkmarket.com/creality-cr-pla-matte-siyah-filament-175mm-1000gr",
    "https://www.robolinkmarket.com/creality-cr-pla-silk-beyaz-filament-175mm-1000gr",
+   "https://www.robolinkmarket.com/creality-ender-fast-pla-beyaz-filament-175mm-1000gr",
+   "https://www.robolinkmarket.com/creality-ender-fast-pla-siyah-filament-175mm-1000gr",
    "https://www.robolinkmarket.com/creality-ender-pla-beyaz-filament-175mm-1000gr",
    "https://www.robolinkmarket.com/creality-ender-pla-siyah-filament-175mm-1000gr",
    "https://www.robolinkmarket.com/creality-hyper-foam-pla-black",
@@ -645,11 +644,12 @@
    "https://www.robolinkmarket.com/robonio-petg-filament-beyaz-175mm-1000gr",
    "https://www.robolinkmarket.com/robonio-petg-filament-siyah-175mm-1000gr",
    "https://www.robolinkmarket.com/robonio-pla-plus-filament-soguk-beyaz-175mm-1000gr",
+   "https://www.robolinkmarket.com/sunlu-pla-filament-transparent-mist-black-175mm-1000gr",
    "https://www.robolinkmarket.com/sunlu-pla-matte-filament-black-175mm-1000gr",
    "https://www.robolinkmarket.com/sunlu-pla-matte-filament-bone-white-175mm-1000gr",
    "https://www.robolinkmarket.com/sunlu-pla-matte-filament-white-175mm-1000gr"
   ],
-  "discovered_at": "2026-11-27T03:40:17+00:00"
+  "discovered_at": "2026-11-27T03:47:48+00:00"
  },
  "robotzade": {
   "urls": [
@@ -699,7 +699,7 @@
    "https://www.robotzade.com/urun/solid-uc-renkli-silk-pla-filament-siyah-kirmizi-altin-1-75mm-1kg",
    "https://www.robotzade.com/urun/solid-uc-renkli-silk-pla-filament-siyah-mavi-mor-1-75mm-1kg"
   ],
-  "discovered_at": "2026-11-27T03:40:17+00:00"
+  "discovered_at": "2026-11-27T03:47:48+00:00"
  },
  "depo3d": {
   "urls": [
@@ -726,6 +726,6 @@
    "https://depo3d.com/r3d-pla-siyah-1-kg-1-75-mm",
    "https://depo3d.com/sunlu-pla-matte-bone-white-1-kg-1-75-mm"
   ],
-  "discovered_at": "2026-11-27T03:40:17+00:00"
+  "discovered_at": "2026-11-27T03:47:48+00:00"
  }
 }
