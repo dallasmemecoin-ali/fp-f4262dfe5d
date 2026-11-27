@@ -87,7 +87,8 @@ NOT_BASE_RE = re.compile(
     r"rainbow|gokkusagi|gradient|degrade|dual|tri|multi|pastel|neon|"
     r"fosfor|sparkle|simli|galaxy|galaksi|star|starlight|lite|ss|"
     r"hs|hyper|rapid|tough|flex|"
-    r"soft|aero|lw|magic|support|destek|pva|tpu|abs|asa|pctg|hips|nylon|"
+    r"soft|aero|lw|magic|support|destek|eco|smart|ht|premium|army|stone|"
+    r"pva|tpu|abs|asa|pctg|hips|nylon|"
     r"naylon|pa6|pc|wash|yuksek\s*hiz(li)?|high\s*speed)\b")
 # More than one spool in the box.
 MULTIPACK_RE = re.compile(
@@ -410,24 +411,36 @@ def run_shopify(store: dict, now: str, log: list) -> list[dict]:
             variants = prod.get("variants") or []
             if not variants:
                 continue
-            live = [v for v in variants if v.get("available")]
-            price = min(to_price(v.get("price")) or 9e12 for v in (live or variants))
-            cls = classify(prod.get("title", ""), price)
-            if not cls:
-                continue
             tags = fold(" ".join(prod.get("tags") or []))
             if "yedekparca" in tags.replace(" ", "") or "aksesuar" in tags:
                 continue
-            status = "in_stock" if live else "out_of_stock"
-            if live and PREORDER_RE.search(fold(prod["title"]) + " " + tags):
-                status = "pre_order"
-            offers.append({
-                "brand": cls[0], "model": cls[1], "variant": cls[2],
-                "store": store["name"], "store_id": store["id"], "seller": "",
-                "title": prod["title"].strip(),
-                "url": f"{base}/products/{prod['handle']}",
-                "price_try": round(price, 2), "status": status, "note": "",
-                "checked_at": now, "stale": False})
+            title = (prod.get("title") or "").strip()
+            # Some shops name the colour only in the variant ("Beyaz / 1.75mm /
+            # 1kg"), so each variant is judged on title plus variant together.
+            for v in variants:
+                vt = (v.get("title") or "").strip()
+                if vt.lower() in ("", "default title"):
+                    vt, full = "", title
+                else:
+                    full = f"{title} {vt}"
+                price = to_price(v.get("price"))
+                if price is None:
+                    continue
+                cls = classify(full, price)
+                if not cls:
+                    continue
+                status = "in_stock" if v.get("available") else "out_of_stock"
+                if status == "in_stock" and PREORDER_RE.search(fold(full) + " " + tags):
+                    status = "pre_order"
+                url = f"{base}/products/{prod['handle']}"
+                if vt and v.get("id"):
+                    url += f"?variant={v['id']}"
+                offers.append({
+                    "brand": cls[0], "model": cls[1], "variant": cls[2],
+                    "store": store["name"], "store_id": store["id"], "seller": "",
+                    "title": f"{title} - {vt}" if vt else title, "url": url,
+                    "price_try": round(price, 2), "status": status, "note": "",
+                    "checked_at": now, "stale": False})
         if len(products) < 250:
             break
         time.sleep(2)
