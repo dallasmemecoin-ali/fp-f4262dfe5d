@@ -1,9 +1,9 @@
 {
- "collected_at": "2026-11-27T05:07:51+00:00",
+ "collected_at": "2026-11-27T07:16:47+00:00",
  "rate": {
-  "usd_try": 50.7853,
+  "usd_try": 50.7866,
   "source": "Truncgil Finans",
-  "at": "2026-11-27T05:08:35+00:00"
+  "at": "2026-11-27T07:18:07+00:00"
  },
  "models": [
   {
@@ -21,7 +21,7 @@
      "price_try": 642.6,
      "status": "in_stock",
      "note": "",
-     "checked_at": "2026-11-27T05:07:51+00:00",
+     "checked_at": "2026-11-27T07:16:47+00:00",
      "stale": false
     },
     {
@@ -33,7 +33,7 @@
      "price_try": 645.73,
      "status": "in_stock",
      "note": "",
-     "checked_at": "2026-11-27T05:07:51+00:00",
+     "checked_at": "2026-11-27T07:16:47+00:00",
      "stale": false
     },
     {
@@ -45,7 +45,7 @@
      "price_try": 646.5,
      "status": "in_stock",
      "note": "",
-     "checked_at": "2026-11-27T05:07:51+00:00",
+     "checked_at": "2026-11-27T07:16:47+00:00",
      "stale": false
     },
     {
@@ -57,7 +57,7 @@
      "price_try": 739.5,
      "status": "in_stock",
      "note": "",
-     "checked_at": "2026-11-27T05:07:51+00:00",
+     "checked_at": "2026-11-27T07:16:47+00:00",
      "stale": false
     }
    ]
@@ -77,7 +77,7 @@
      "price_try": 642.6,
      "status": "in_stock",
      "note": "",
-     "checked_at": "2026-11-27T05:07:51+00:00",
+     "checked_at": "2026-11-27T07:16:47+00:00",
      "stale": false
     },
     {
@@ -89,7 +89,7 @@
      "price_try": 645.73,
      "status": "in_stock",
      "note": "",
-     "checked_at": "2026-11-27T05:07:51+00:00",
+     "checked_at": "2026-11-27T07:16:47+00:00",
      "stale": false
     },
     {
@@ -101,7 +101,7 @@
      "price_try": 646.5,
      "status": "in_stock",
      "note": "",
-     "checked_at": "2026-11-27T05:07:51+00:00",
+     "checked_at": "2026-11-27T07:16:47+00:00",
      "stale": false
     },
     {
@@ -113,7 +113,7 @@
      "price_try": 739.5,
      "status": "in_stock",
      "note": "",
-     "checked_at": "2026-11-27T05:07:51+00:00",
+     "checked_at": "2026-11-27T07:16:47+00:00",
      "stale": false
     },
     {
@@ -125,7 +125,7 @@
      "price_try": 645.73,
      "status": "out_of_stock",
      "note": "",
-     "checked_at": "2026-11-27T05:07:51+00:00",
+     "checked_at": "2026-11-27T07:16:47+00:00",
      "stale": false
     }
    ]
@@ -145,7 +145,7 @@
      "price_try": 684.0,
      "status": "out_of_stock",
      "note": "",
-     "checked_at": "2026-11-27T05:07:51+00:00",
+     "checked_at": "2026-11-27T07:16:47+00:00",
      "stale": false
     },
     {
@@ -157,7 +157,7 @@
      "price_try": 734.4,
      "status": "out_of_stock",
      "note": "",
-     "checked_at": "2026-11-27T05:07:51+00:00",
+     "checked_at": "2026-11-27T07:16:47+00:00",
      "stale": false
     },
     {
@@ -169,7 +169,7 @@
      "price_try": 734.82,
      "status": "out_of_stock",
      "note": "",
-     "checked_at": "2026-11-27T05:07:51+00:00",
+     "checked_at": "2026-11-27T07:16:47+00:00",
      "stale": false
     },
     {
@@ -181,7 +181,7 @@
      "price_try": 850.5,
      "status": "out_of_stock",
      "note": "",
-     "checked_at": "2026-11-27T05:07:51+00:00",
+     "checked_at": "2026-11-27T07:16:47+00:00",
      "stale": false
     },
     {
@@ -193,7 +193,7 @@
      "price_try": 851.39,
      "status": "out_of_stock",
      "note": "",
-     "checked_at": "2026-11-27T05:07:51+00:00",
+     "checked_at": "2026-11-27T07:16:47+00:00",
      "stale": false
     }
    ]
@@ -213,7 +213,7 @@
      "price_try": 684.0,
      "status": "out_of_stock",
      "note": "",
-     "checked_at": "2026-11-27T05:07:51+00:00",
+     "checked_at": "2026-11-27T07:16:47+00:00",
      "stale": false
     },
     {
@@ -225,7 +225,7 @@
      "price_try": 734.4,
      "status": "out_of_stock",
      "note": "",
-     "checked_at": "2026-11-27T05:07:51+00:00",
+     "checked_at": "2026-11-27T07:16:47+00:00",
      "stale": false
     },
     {
@@ -237,7 +237,7 @@
      "price_try": 734.82,
      "status": "out_of_stock",
      "note": "",
-     "checked_at": "2026-11-27T05:07:51+00:00",
+     "checked_at": "2026-11-27T07:16:47+00:00",
      "stale": false
     },
     {
@@ -249,7 +249,7 @@
      "price_try": 851.39,
      "status": "out_of_stock",
      "note": "",
-     "checked_at": "2026-11-27T05:07:51+00:00",
+     "checked_at": "2026-11-27T07:16:47+00:00",
      "stale": false
     },
     {
@@ -261,7 +261,7 @@
      "price_try": 1017.0,
      "status": "out_of_stock",
      "note": "",
-     "checked_at": "2026-11-27T05:07:51+00:00",
+     "checked_at": "2026-11-27T07:16:47+00:00",
      "stale": false
     }
    ]
@@ -281,7 +281,7 @@
      "price_try": 516.91,
      "status": "in_stock",
      "note": "",
-     "checked_at": "2026-11-27T05:07:51+00:00",
+     "checked_at": "2026-11-27T07:16:47+00:00",
      "stale": false
     },
     {
@@ -293,7 +293,7 @@
      "price_try": 540.0,
      "status": "in_stock",
      "note": "",
-     "checked_at": "2026-11-27T05:07:51+00:00",
+     "checked_at": "2026-11-27T07:16:47+00:00",
      "stale": false
     },
     {
@@ -305,7 +305,7 @@
      "price_try": 480.0,
      "status": "out_of_stock",
      "note": "",
-     "checked_at": "2026-11-27T05:07:51+00:00",
+     "checked_at": "2026-11-27T07:16:47+00:00",
      "stale": false
     },
     {
@@ -317,7 +317,7 @@
      "price_try": 499.0,
      "status": "out_of_stock",
      "note": "",
-     "checked_at": "2026-11-27T05:07:51+00:00",
+     "checked_at": "2026-11-27T07:16:47+00:00",
      "stale": false
     },
     {
@@ -329,7 +329,7 @@
      "price_try": 577.5,
      "status": "out_of_stock",
      "note": "",
-     "checked_at": "2026-11-27T05:07:51+00:00",
+     "checked_at": "2026-11-27T07:16:47+00:00",
      "stale": false
     }
    ]
@@ -349,7 +349,7 @@
      "price_try": 516.91,
      "status": "in_stock",
      "note": "",
-     "checked_at": "2026-11-27T05:07:51+00:00",
+     "checked_at": "2026-11-27T07:16:47+00:00",
      "stale": false
     },
     {
@@ -361,7 +361,7 @@
      "price_try": 540.0,
      "status": "in_stock",
      "note": "",
-     "checked_at": "2026-11-27T05:07:51+00:00",
+     "checked_at": "2026-11-27T07:16:47+00:00",
      "stale": false
     },
     {
@@ -373,7 +373,7 @@
      "price_try": 558.0,
      "status": "in_stock",
      "note": "",
-     "checked_at": "2026-11-27T05:07:51+00:00",
+     "checked_at": "2026-11-27T07:16:47+00:00",
      "stale": false
     },
     {
@@ -385,7 +385,7 @@
      "price_try": 480.0,
      "status": "out_of_stock",
      "note": "",
-     "checked_at": "2026-11-27T05:07:51+00:00",
+     "checked_at": "2026-11-27T07:16:47+00:00",
      "stale": false
     },
     {
@@ -397,7 +397,7 @@
      "price_try": 603.07,
      "status": "out_of_stock",
      "note": "",
-     "checked_at": "2026-11-27T05:07:51+00:00",
+     "checked_at": "2026-11-27T07:16:47+00:00",
      "stale": false
     }
    ]
@@ -417,7 +417,7 @@
      "price_try": 610.0,
      "status": "in_stock",
      "note": "",
-     "checked_at": "2026-11-27T05:07:51+00:00",
+     "checked_at": "2026-11-27T07:16:47+00:00",
      "stale": false
     },
     {
@@ -429,7 +429,7 @@
      "price_try": 653.75,
      "status": "in_stock",
      "note": "",
-     "checked_at": "2026-11-27T05:07:51+00:00",
+     "checked_at": "2026-11-27T07:16:47+00:00",
      "stale": false
     }
    ]
@@ -449,7 +449,7 @@
      "price_try": 610.0,
      "status": "in_stock",
      "note": "",
-     "checked_at": "2026-11-27T05:07:51+00:00",
+     "checked_at": "2026-11-27T07:16:47+00:00",
      "stale": false
     },
     {
@@ -461,7 +461,7 @@
      "price_try": 653.75,
      "status": "in_stock",
      "note": "",
-     "checked_at": "2026-11-27T05:07:51+00:00",
+     "checked_at": "2026-11-27T07:16:47+00:00",
      "stale": false
     }
    ]
@@ -481,7 +481,7 @@
      "price_try": 648.0,
      "status": "in_stock",
      "note": "",
-     "checked_at": "2026-11-27T05:07:51+00:00",
+     "checked_at": "2026-11-27T07:16:47+00:00",
      "stale": false
     },
     {
@@ -493,7 +493,7 @@
      "price_try": 813.97,
      "status": "in_stock",
      "note": "",
-     "checked_at": "2026-11-27T05:07:51+00:00",
+     "checked_at": "2026-11-27T07:16:47+00:00",
      "stale": false
     }
    ]
@@ -513,7 +513,7 @@
      "price_try": 648.0,
      "status": "in_stock",
      "note": "",
-     "checked_at": "2026-11-27T05:07:51+00:00",
+     "checked_at": "2026-11-27T07:16:47+00:00",
      "stale": false
     },
     {
@@ -525,7 +525,7 @@
      "price_try": 813.97,
      "status": "out_of_stock",
      "note": "",
-     "checked_at": "2026-11-27T05:07:51+00:00",
+     "checked_at": "2026-11-27T07:16:47+00:00",
      "stale": false
     }
    ]
@@ -545,7 +545,7 @@
      "price_try": 712.8,
      "status": "in_stock",
      "note": "",
-     "checked_at": "2026-11-27T05:07:51+00:00",
+     "checked_at": "2026-11-27T07:16:47+00:00",
      "stale": false
     }
    ]
@@ -565,7 +565,7 @@
      "price_try": 712.8,
      "status": "in_stock",
      "note": "",
-     "checked_at": "2026-11-27T05:07:51+00:00",
+     "checked_at": "2026-11-27T07:16:47+00:00",
      "stale": false
     },
     {
@@ -577,7 +577,7 @@
      "price_try": 857.27,
      "status": "out_of_stock",
      "note": "",
-     "checked_at": "2026-11-27T05:07:51+00:00",
+     "checked_at": "2026-11-27T07:16:47+00:00",
      "stale": false
     }
    ]
@@ -597,7 +597,7 @@
      "price_try": 800.06,
      "status": "in_stock",
      "note": "",
-     "checked_at": "2026-11-27T05:07:51+00:00",
+     "checked_at": "2026-11-27T07:16:47+00:00",
      "stale": false
     },
     {
@@ -609,7 +609,7 @@
      "price_try": 612.0,
      "status": "out_of_stock",
      "note": "",
-     "checked_at": "2026-11-27T05:07:51+00:00",
+     "checked_at": "2026-11-27T07:16:47+00:00",
      "stale": false
     },
     {
@@ -621,7 +621,7 @@
      "price_try": 645.0,
      "status": "out_of_stock",
      "note": "",
-     "checked_at": "2026-11-27T05:07:51+00:00",
+     "checked_at": "2026-11-27T07:16:47+00:00",
      "stale": false
     },
     {
@@ -633,7 +633,7 @@
      "price_try": 720.0,
      "status": "out_of_stock",
      "note": "",
-     "checked_at": "2026-11-27T05:07:51+00:00",
+     "checked_at": "2026-11-27T07:16:47+00:00",
      "stale": false
     }
    ]
@@ -653,7 +653,7 @@
      "price_try": 800.06,
      "status": "in_stock",
      "note": "",
-     "checked_at": "2026-11-27T05:07:51+00:00",
+     "checked_at": "2026-11-27T07:16:47+00:00",
      "stale": false
     },
     {
@@ -665,7 +665,7 @@
      "price_try": 612.0,
      "status": "out_of_stock",
      "note": "",
-     "checked_at": "2026-11-27T05:07:51+00:00",
+     "checked_at": "2026-11-27T07:16:47+00:00",
      "stale": false
     },
     {
@@ -677,7 +677,7 @@
      "price_try": 645.0,
      "status": "out_of_stock",
      "note": "",
-     "checked_at": "2026-11-27T05:07:51+00:00",
+     "checked_at": "2026-11-27T07:16:47+00:00",
      "stale": false
     },
     {
@@ -689,7 +689,7 @@
      "price_try": 720.0,
      "status": "out_of_stock",
      "note": "",
-     "checked_at": "2026-11-27T05:07:51+00:00",
+     "checked_at": "2026-11-27T07:16:47+00:00",
      "stale": false
     }
    ]
@@ -709,7 +709,7 @@
      "price_try": 532.5,
      "status": "in_stock",
      "note": "",
-     "checked_at": "2026-11-27T05:07:51+00:00",
+     "checked_at": "2026-11-27T07:16:47+00:00",
      "stale": false
     },
     {
@@ -721,7 +721,7 @@
      "price_try": 552.61,
      "status": "in_stock",
      "note": "",
-     "checked_at": "2026-11-27T05:07:51+00:00",
+     "checked_at": "2026-11-27T07:16:47+00:00",
      "stale": false
     },
     {
@@ -733,7 +733,7 @@
      "price_try": 480.0,
      "status": "out_of_stock",
      "note": "",
-     "checked_at": "2026-11-27T05:07:51+00:00",
+     "checked_at": "2026-11-27T07:16:47+00:00",
      "stale": false
     },
     {
@@ -745,7 +745,7 @@
      "price_try": 600.0,
      "status": "out_of_stock",
      "note": "",
-     "checked_at": "2026-11-27T05:07:51+00:00",
+     "checked_at": "2026-11-27T07:16:47+00:00",
      "stale": false
     },
     {
@@ -757,7 +757,7 @@
      "price_try": 600.0,
      "status": "out_of_stock",
      "note": "",
-     "checked_at": "2026-11-27T05:07:51+00:00",
+     "checked_at": "2026-11-27T07:16:47+00:00",
      "stale": false
     },
     {
@@ -769,7 +769,7 @@
      "price_try": 622.5,
      "status": "out_of_stock",
      "note": "",
-     "checked_at": "2026-11-27T05:07:51+00:00",
+     "checked_at": "2026-11-27T07:16:47+00:00",
      "stale": false
     },
     {
@@ -781,7 +781,7 @@
      "price_try": 673.2,
      "status": "out_of_stock",
      "note": "",
-     "checked_at": "2026-11-27T05:07:51+00:00",
+     "checked_at": "2026-11-27T07:16:47+00:00",
      "stale": false
     }
    ]
@@ -801,7 +801,7 @@
      "price_try": 517.5,
      "status": "in_stock",
      "note": "",
-     "checked_at": "2026-11-27T05:07:51+00:00",
+     "checked_at": "2026-11-27T07:16:47+00:00",
      "stale": false
     },
     {
@@ -813,7 +813,7 @@
      "price_try": 600.0,
      "status": "in_stock",
      "note": "",
-     "checked_at": "2026-11-27T05:07:51+00:00",
+     "checked_at": "2026-11-27T07:16:47+00:00",
      "stale": false
     },
     {
@@ -825,7 +825,7 @@
      "price_try": 480.0,
      "status": "out_of_stock",
      "note": "",
-     "checked_at": "2026-11-27T05:07:51+00:00",
+     "checked_at": "2026-11-27T07:16:47+00:00",
      "stale": false
     },
     {
@@ -837,7 +837,7 @@
      "price_try": 552.61,
      "status": "out_of_stock",
      "note": "",
-     "checked_at": "2026-11-27T05:07:51+00:00",
+     "checked_at": "2026-11-27T07:16:47+00:00",
      "stale": false
     },
     {
@@ -849,7 +849,7 @@
      "price_try": 600.0,
      "status": "out_of_stock",
      "note": "",
-     "checked_at": "2026-11-27T05:07:51+00:00",
+     "checked_at": "2026-11-27T07:16:47+00:00",
      "stale": false
     },
     {
@@ -861,7 +861,7 @@
      "price_try": 618.23,
      "status": "out_of_stock",
      "note": "",
-     "checked_at": "2026-11-27T05:07:51+00:00",
+     "checked_at": "2026-11-27T07:16:47+00:00",
      "stale": false
     },
     {
@@ -873,7 +873,7 @@
      "price_try": 622.5,
      "status": "out_of_stock",
      "note": "",
-     "checked_at": "2026-11-27T05:07:51+00:00",
+     "checked_at": "2026-11-27T07:16:47+00:00",
      "stale": false
     },
     {
@@ -885,7 +885,7 @@
      "price_try": 673.2,
      "status": "out_of_stock",
      "note": "",
-     "checked_at": "2026-11-27T05:07:51+00:00",
+     "checked_at": "2026-11-27T07:16:47+00:00",
      "stale": false
     }
    ]
@@ -905,7 +905,7 @@
      "price_try": 979.2,
      "status": "in_stock",
      "note": "",
-     "checked_at": "2026-11-27T05:07:51+00:00",
+     "checked_at": "2026-11-27T07:16:47+00:00",
      "stale": false
     },
     {
@@ -917,7 +917,7 @@
      "price_try": 990.75,
      "status": "in_stock",
      "note": "",
-     "checked_at": "2026-11-27T05:07:51+00:00",
+     "checked_at": "2026-11-27T07:16:47+00:00",
      "stale": false
     },
     {
@@ -929,7 +929,7 @@
      "price_try": 999.0,
      "status": "in_stock",
      "note": "",
-     "checked_at": "2026-11-27T05:07:51+00:00",
+     "checked_at": "2026-11-27T07:16:47+00:00",
      "stale": false
     },
     {
@@ -941,7 +941,7 @@
      "price_try": 896.67,
      "status": "out_of_stock",
      "note": "",
-     "checked_at": "2026-11-27T05:07:51+00:00",
+     "checked_at": "2026-11-27T07:16:47+00:00",
      "stale": false
     },
     {
@@ -953,7 +953,7 @@
      "price_try": 1076.0,
      "status": "out_of_stock",
      "note": "",
-     "checked_at": "2026-11-27T05:07:51+00:00",
+     "checked_at": "2026-11-27T07:16:47+00:00",
      "stale": false
     },
     {
@@ -965,7 +965,7 @@
      "price_try": 1127.58,
      "status": "out_of_stock",
      "note": "",
-     "checked_at": "2026-11-27T05:07:51+00:00",
+     "checked_at": "2026-11-27T07:16:47+00:00",
      "stale": false
     }
    ]
@@ -985,7 +985,7 @@
      "price_try": 762.17,
      "status": "in_stock",
      "note": "",
-     "checked_at": "2026-11-27T05:07:51+00:00",
+     "checked_at": "2026-11-27T07:16:47+00:00",
      "stale": false
     },
     {
@@ -997,7 +997,7 @@
      "price_try": 896.67,
      "status": "out_of_stock",
      "note": "",
-     "checked_at": "2026-11-27T05:07:51+00:00",
+     "checked_at": "2026-11-27T07:16:47+00:00",
      "stale": false
     },
     {
@@ -1009,7 +1009,7 @@
      "price_try": 1127.58,
      "status": "out_of_stock",
      "note": "",
-     "checked_at": "2026-11-27T05:07:51+00:00",
+     "checked_at": "2026-11-27T07:16:47+00:00",
      "stale": false
     },
     {
@@ -1021,7 +1021,7 @@
      "price_try": 1160.71,
      "status": "out_of_stock",
      "note": "",
-     "checked_at": "2026-11-27T05:07:51+00:00",
+     "checked_at": "2026-11-27T07:16:47+00:00",
      "stale": false
     }
    ]
@@ -1041,7 +1041,7 @@
      "price_try": 990.75,
      "status": "in_stock",
      "note": "",
-     "checked_at": "2026-11-27T05:07:51+00:00",
+     "checked_at": "2026-11-27T07:16:47+00:00",
      "stale": false
     },
     {
@@ -1053,7 +1053,7 @@
      "price_try": 896.67,
      "status": "out_of_stock",
      "note": "",
-     "checked_at": "2026-11-27T05:07:51+00:00",
+     "checked_at": "2026-11-27T07:16:47+00:00",
      "stale": false
     },
     {
@@ -1065,7 +1065,7 @@
      "price_try": 1076.0,
      "status": "out_of_stock",
      "note": "",
-     "checked_at": "2026-11-27T05:07:51+00:00",
+     "checked_at": "2026-11-27T07:16:47+00:00",
      "stale": false
     }
    ]
@@ -1085,7 +1085,7 @@
      "price_try": 762.17,
      "status": "in_stock",
      "note": "",
-     "checked_at": "2026-11-27T05:07:51+00:00",
+     "checked_at": "2026-11-27T07:16:47+00:00",
      "stale": false
     },
     {
@@ -1097,7 +1097,7 @@
      "price_try": 896.67,
      "status": "out_of_stock",
      "note": "",
-     "checked_at": "2026-11-27T05:07:51+00:00",
+     "checked_at": "2026-11-27T07:16:47+00:00",
      "stale": false
     }
    ]
@@ -1117,7 +1117,7 @@
      "price_try": 896.67,
      "status": "out_of_stock",
      "note": "",
-     "checked_at": "2026-11-27T05:07:51+00:00",
+     "checked_at": "2026-11-27T07:16:47+00:00",
      "stale": false
     },
     {
@@ -1129,7 +1129,7 @@
      "price_try": 973.01,
      "status": "out_of_stock",
      "note": "",
-     "checked_at": "2026-11-27T05:07:51+00:00",
+     "checked_at": "2026-11-27T07:16:47+00:00",
      "stale": false
     },
     {
@@ -1141,7 +1141,7 @@
      "price_try": 1153.78,
      "status": "out_of_stock",
      "note": "",
-     "checked_at": "2026-11-27T05:07:51+00:00",
+     "checked_at": "2026-11-27T07:16:47+00:00",
      "stale": false
     }
    ]
@@ -1161,7 +1161,7 @@
      "price_try": 762.17,
      "status": "in_stock",
      "note": "",
-     "checked_at": "2026-11-27T05:07:51+00:00",
+     "checked_at": "2026-11-27T07:16:47+00:00",
      "stale": false
     },
     {
@@ -1173,7 +1173,7 @@
      "price_try": 949.44,
      "status": "out_of_stock",
      "note": "",
-     "checked_at": "2026-11-27T05:07:51+00:00",
+     "checked_at": "2026-11-27T07:16:47+00:00",
      "stale": false
     },
     {
@@ -1185,7 +1185,7 @@
      "price_try": 1031.13,
      "status": "out_of_stock",
      "note": "",
-     "checked_at": "2026-11-27T05:07:51+00:00",
+     "checked_at": "2026-11-27T07:16:47+00:00",
      "stale": false
     }
    ]
@@ -1205,7 +1205,7 @@
      "price_try": 896.67,
      "status": "out_of_stock",
      "note": "",
-     "checked_at": "2026-11-27T05:07:51+00:00",
+     "checked_at": "2026-11-27T07:16:47+00:00",
      "stale": false
     },
     {
@@ -1217,7 +1217,7 @@
      "price_try": 973.01,
      "status": "out_of_stock",
      "note": "",
-     "checked_at": "2026-11-27T05:07:51+00:00",
+     "checked_at": "2026-11-27T07:16:47+00:00",
      "stale": false
     },
     {
@@ -1229,7 +1229,7 @@
      "price_try": 1153.78,
      "status": "out_of_stock",
      "note": "",
-     "checked_at": "2026-11-27T05:07:51+00:00",
+     "checked_at": "2026-11-27T07:16:47+00:00",
      "stale": false
     }
    ]
@@ -1249,7 +1249,7 @@
      "price_try": 762.17,
      "status": "out_of_stock",
      "note": "",
-     "checked_at": "2026-11-27T05:07:51+00:00",
+     "checked_at": "2026-11-27T07:16:47+00:00",
      "stale": false
     },
     {
@@ -1261,7 +1261,7 @@
      "price_try": 949.44,
      "status": "out_of_stock",
      "note": "",
-     "checked_at": "2026-11-27T05:07:51+00:00",
+     "checked_at": "2026-11-27T07:16:47+00:00",
      "stale": false
     },
     {
@@ -1273,7 +1273,7 @@
      "price_try": 1031.13,
      "status": "out_of_stock",
      "note": "",
-     "checked_at": "2026-11-27T05:07:51+00:00",
+     "checked_at": "2026-11-27T07:16:47+00:00",
      "stale": false
     }
    ]
