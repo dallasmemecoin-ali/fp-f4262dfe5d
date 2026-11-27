@@ -85,7 +85,8 @@ NOT_BASE_RE = re.compile(
     r"\b(plus|pro|matte|mat|silk|ipek|cf|gf|carbon|karbon|fiber|fibre|"
     r"cam|glass|wood|ahsap|metal|metalik|marble|mermer|glow|luminous|"
     r"rainbow|gokkusagi|gradient|degrade|dual|tri|multi|pastel|neon|"
-    r"fosfor|sparkle|simli|galaxy|starlight|hs|hyper|rapid|tough|flex|"
+    r"fosfor|sparkle|simli|galaxy|galaksi|star|starlight|lite|ss|"
+    r"hs|hyper|rapid|tough|flex|"
     r"soft|aero|lw|magic|support|destek|pva|tpu|abs|asa|pctg|hips|nylon|"
     r"naylon|pa6|pc|wash|yuksek\s*hiz(li)?|high\s*speed)\b")
 # More than one spool in the box.

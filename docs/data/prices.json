@@ -1,9 +1,9 @@
 {
- "collected_at": "2026-11-27T03:29:59+00:00",
+ "collected_at": "2026-11-27T03:32:59+00:00",
  "rate": {
-  "usd_try": 50.7834,
+  "usd_try": 50.783,
   "source": "Truncgil Finans",
-  "at": "2026-11-27T03:31:35+00:00"
+  "at": "2026-11-27T03:33:59+00:00"
  },
  "models": [
   {
@@ -33,7 +33,7 @@
      "price_try": 645.73,
      "status": "in_stock",
      "note": "",
-     "checked_at": "2026-11-27T03:29:59+00:00",
+     "checked_at": "2026-11-27T03:32:59+00:00",
      "stale": false
     },
     {
@@ -56,18 +56,6 @@
      "url": "https://www.direnc.net/filament-175mm-pla-siyah-esun",
      "price_try": 739.5,
      "status": "in_stock",
-     "note": "",
-     "checked_at": "2026-11-27T03:29:59+00:00",
-     "stale": false
-    },
-    {
-     "store": "3DCim",
-     "store_id": "3dcim",
-     "seller": "",
-     "title": "eSun PLA STAR Galaksi Siyah Filament 1.75mm 1 Kg",
-     "url": "https://3dcim.com/esun-pla-star-galaksi-siyah-filament",
-     "price_try": 1114.91,
-     "status": "out_of_stock",
      "note": "",
      "checked_at": "2026-11-27T03:29:59+00:00",
      "stale": false
@@ -101,7 +89,7 @@
      "price_try": 645.73,
      "status": "in_stock",
      "note": "",
-     "checked_at": "2026-11-27T03:29:59+00:00",
+     "checked_at": "2026-11-27T03:32:59+00:00",
      "stale": false
     },
     {
@@ -137,31 +125,7 @@
      "price_try": 645.73,
      "status": "out_of_stock",
      "note": "",
-     "checked_at": "2026-11-27T03:29:59+00:00",
-     "stale": false
-    },
-    {
-     "store": "3DCim",
-     "store_id": "3dcim",
-     "seller": "",
-     "title": "eSun PLA-Lite Beyaz Filament 1.75mm 1 Kg",
-     "url": "https://3dcim.com/esun-pla-lite-beyaz-filament-1.75mm-1-kg-2556",
-     "price_try": 910.68,
-     "status": "out_of_stock",
-     "note": "",
-     "checked_at": "2026-11-27T03:29:59+00:00",
-     "stale": false
-    },
-    {
-     "store": "3DCim",
-     "store_id": "3dcim",
-     "seller": "",
-     "title": "eSun PLA-SS Beyaz Filament 1.75mm 1 Kg",
-     "url": "https://3dcim.com/esun-pla-ss-beyaz-filament",
-     "price_try": 1013.56,
-     "status": "out_of_stock",
-     "note": "",
-     "checked_at": "2026-11-27T03:29:59+00:00",
+     "checked_at": "2026-11-27T03:32:59+00:00",
      "stale": false
     }
    ]
@@ -205,7 +169,7 @@
      "price_try": 734.82,
      "status": "out_of_stock",
      "note": "",
-     "checked_at": "2026-11-27T03:29:59+00:00",
+     "checked_at": "2026-11-27T03:32:59+00:00",
      "stale": false
     },
     {
@@ -229,7 +193,7 @@
      "price_try": 851.39,
      "status": "out_of_stock",
      "note": "",
-     "checked_at": "2026-11-27T03:29:59+00:00",
+     "checked_at": "2026-11-27T03:32:59+00:00",
      "stale": false
     }
    ]
@@ -273,7 +237,7 @@
      "price_try": 734.82,
      "status": "out_of_stock",
      "note": "",
-     "checked_at": "2026-11-27T03:29:59+00:00",
+     "checked_at": "2026-11-27T03:32:59+00:00",
      "stale": false
     },
     {
@@ -285,7 +249,7 @@
      "price_try": 851.39,
      "status": "out_of_stock",
      "note": "",
-     "checked_at": "2026-11-27T03:29:59+00:00",
+     "checked_at": "2026-11-27T03:32:59+00:00",
      "stale": false
     },
     {
@@ -353,7 +317,7 @@
      "price_try": 499.0,
      "status": "out_of_stock",
      "note": "",
-     "checked_at": "2026-11-27T03:29:59+00:00",
+     "checked_at": "2026-11-27T03:32:59+00:00",
      "stale": false
     },
     {
@@ -433,7 +397,7 @@
      "price_try": 603.07,
      "status": "out_of_stock",
      "note": "",
-     "checked_at": "2026-11-27T03:29:59+00:00",
+     "checked_at": "2026-11-27T03:32:59+00:00",
      "stale": false
     }
    ]
@@ -465,7 +429,7 @@
      "price_try": 653.4,
      "status": "in_stock",
      "note": "",
-     "checked_at": "2026-11-27T03:29:59+00:00",
+     "checked_at": "2026-11-27T03:32:59+00:00",
      "stale": false
     },
     {
@@ -477,7 +441,7 @@
      "price_try": 653.75,
      "status": "in_stock",
      "note": "",
-     "checked_at": "2026-11-27T03:29:59+00:00",
+     "checked_at": "2026-11-27T03:32:59+00:00",
      "stale": false
     }
    ]
@@ -509,7 +473,7 @@
      "price_try": 653.75,
      "status": "in_stock",
      "note": "",
-     "checked_at": "2026-11-27T03:29:59+00:00",
+     "checked_at": "2026-11-27T03:32:59+00:00",
      "stale": false
     }
    ]
@@ -601,7 +565,7 @@
      "price_try": 727.33,
      "status": "in_stock",
      "note": "",
-     "checked_at": "2026-11-27T03:29:59+00:00",
+     "checked_at": "2026-11-27T03:32:59+00:00",
      "stale": false
     },
     {
@@ -613,7 +577,7 @@
      "price_try": 800.06,
      "status": "in_stock",
      "note": "",
-     "checked_at": "2026-11-27T03:29:59+00:00",
+     "checked_at": "2026-11-27T03:32:59+00:00",
      "stale": false
     },
     {
@@ -717,7 +681,7 @@
      "price_try": 727.33,
      "status": "in_stock",
      "note": "",
-     "checked_at": "2026-11-27T03:29:59+00:00",
+     "checked_at": "2026-11-27T03:32:59+00:00",
      "stale": false
     },
     {
@@ -729,7 +693,7 @@
      "price_try": 800.06,
      "status": "in_stock",
      "note": "",
-     "checked_at": "2026-11-27T03:29:59+00:00",
+     "checked_at": "2026-11-27T03:32:59+00:00",
      "stale": false
     },
     {
@@ -809,7 +773,7 @@
      "price_try": 552.61,
      "status": "in_stock",
      "note": "",
-     "checked_at": "2026-11-27T03:29:59+00:00",
+     "checked_at": "2026-11-27T03:32:59+00:00",
      "stale": false
     },
     {
@@ -925,7 +889,7 @@
      "price_try": 552.61,
      "status": "out_of_stock",
      "note": "",
-     "checked_at": "2026-11-27T03:29:59+00:00",
+     "checked_at": "2026-11-27T03:32:59+00:00",
      "stale": false
     },
     {
@@ -949,7 +913,7 @@
      "price_try": 618.23,
      "status": "out_of_stock",
      "note": "",
-     "checked_at": "2026-11-27T03:29:59+00:00",
+     "checked_at": "2026-11-27T03:32:59+00:00",
      "stale": false
     },
     {
@@ -1005,7 +969,7 @@
      "price_try": 990.75,
      "status": "in_stock",
      "note": "",
-     "checked_at": "2026-11-27T03:29:59+00:00",
+     "checked_at": "2026-11-27T03:32:59+00:00",
      "stale": false
     },
     {
@@ -1053,7 +1017,7 @@
      "price_try": 1127.58,
      "status": "out_of_stock",
      "note": "",
-     "checked_at": "2026-11-27T03:29:59+00:00",
+     "checked_at": "2026-11-27T03:32:59+00:00",
      "stale": false
     }
    ]
@@ -1097,7 +1061,7 @@
      "price_try": 1127.58,
      "status": "out_of_stock",
      "note": "",
-     "checked_at": "2026-11-27T03:29:59+00:00",
+     "checked_at": "2026-11-27T03:32:59+00:00",
      "stale": false
     },
     {
@@ -1129,7 +1093,7 @@
      "price_try": 990.75,
      "status": "in_stock",
      "note": "",
-     "checked_at": "2026-11-27T03:29:59+00:00",
+     "checked_at": "2026-11-27T03:32:59+00:00",
      "stale": false
     },
     {
@@ -1217,7 +1181,7 @@
      "price_try": 973.01,
      "status": "out_of_stock",
      "note": "",
-     "checked_at": "2026-11-27T03:29:59+00:00",
+     "checked_at": "2026-11-27T03:32:59+00:00",
      "stale": false
     },
     {
@@ -1305,7 +1269,7 @@
      "price_try": 973.01,
      "status": "out_of_stock",
      "note": "",
-     "checked_at": "2026-11-27T03:29:59+00:00",
+     "checked_at": "2026-11-27T03:32:59+00:00",
      "stale": false
     },
     {
@@ -1375,7 +1339,7 @@
    },
    {
     "name": "3DCim",
-    "offers": 28
+    "offers": 25
    },
    {
     "name": "Depo3D",
