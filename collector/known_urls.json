@@ -72,7 +72,7 @@
    "https://www.robotistan.com/tinylab-hyper-3d-175-mm-black-pla-fast-filament-en",
    "https://www.robotistan.com/tinylab-hyper-3d-175-mm-siyah-pla-hizli-filament"
   ],
-  "discovered_at": "2026-11-27T17:06:46+00:00"
+  "discovered_at": "2026-11-27T23:53:14+00:00"
  },
  "robo90": {
   "urls": [
@@ -188,7 +188,7 @@
    "https://www.robo90.com/sunlu-high-speed-pla-filament-siyah-175mm-1kg",
    "https://www.robo90.com/sunlu-lw-pla-filament-beyaz-800-g-1"
   ],
-  "discovered_at": "2026-11-27T17:06:46+00:00"
+  "discovered_at": "2026-11-27T23:53:14+00:00"
  },
  "porima": {
   "urls": [],
@@ -323,7 +323,7 @@
    "https://3dcim.com/sunlu-pla-matte-white-filament-1.75mm-1-kg-3497",
    "https://3dcim.com/sunlu-pla-transparent-mist-black-filament-1.75mm-1-kg-3448"
   ],
-  "discovered_at": "2026-11-27T17:06:46+00:00"
+  "discovered_at": "2026-11-27T23:53:14+00:00"
  },
  "3dteknomarket": {
   "urls": [],
@@ -342,7 +342,7 @@
    "https://www.direnc.net/siyah-petg-filament-175mm-1kg-tri-d",
    "https://www.direnc.net/siyah-pla-plus-filament-175mm-1kg-tri-d"
   ],
-  "discovered_at": "2026-11-27T17:06:46+00:00"
+  "discovered_at": "2026-11-27T23:53:14+00:00"
  },
  "metatech": {
   "urls": [
@@ -429,7 +429,7 @@
    "https://store.metatechtr.com/uzy-super-pla-jet-black-1kg",
    "https://store.metatechtr.com/uzy-super-pla-signal-white-1kg"
   ],
-  "discovered_at": "2026-11-27T17:06:46+00:00"
+  "discovered_at": "2026-11-27T23:53:14+00:00"
  },
  "filamentmarketim": {
   "urls": [],
@@ -441,7 +441,7 @@
    "https://www.filamentmarketim.com/sunlu-filadryer-sp2-filament-saklama-kutusu-2x-pla-2.0-siyah-hediyeli",
    "https://www.filamentmarketim.com/sunlu-pla-carbon-fiber-filament-siyah"
   ],
-  "discovered_at": "2026-11-27T22:56:52+00:00"
+  "discovered_at": "2026-11-27T23:53:14+00:00"
  },
  "makerpazar": {
   "urls": [],
@@ -450,7 +450,7 @@
    "https://makerpazar.com/elegoo-pla-cf-karbon-fiber-filament-siyah-1-75mm-1-kg",
    "https://makerpazar.com/flashforge-hs-petg-beyaz-filament-1kg-1-75mm"
   ],
-  "discovered_at": "2026-11-27T22:56:52+00:00"
+  "discovered_at": "2026-11-27T23:53:14+00:00"
  },
  "matersan": {
   "urls": [
@@ -509,7 +509,7 @@
    "https://www.matersan.com.tr/urun/sunlu-pla-high-speed-filament-beyaz-1-75mm-1kg",
    "https://www.matersan.com.tr/urun/sunlu-pla-high-speed-filament-siyah-1-75mm-1kg"
   ],
-  "discovered_at": "2026-11-27T17:06:46+00:00"
+  "discovered_at": "2026-11-27T23:53:14+00:00"
  },
  "robolinkmarket": {
   "urls": [
@@ -649,7 +649,7 @@
    "https://www.robolinkmarket.com/sunlu-pla-matte-filament-bone-white-175mm-1000gr",
    "https://www.robolinkmarket.com/sunlu-pla-matte-filament-white-175mm-1000gr"
   ],
-  "discovered_at": "2026-11-27T17:06:46+00:00"
+  "discovered_at": "2026-11-27T23:53:14+00:00"
  },
  "robotzade": {
   "urls": [
@@ -699,7 +699,7 @@
    "https://www.robotzade.com/urun/solid-uc-renkli-silk-pla-filament-siyah-kirmizi-altin-1-75mm-1kg",
    "https://www.robotzade.com/urun/solid-uc-renkli-silk-pla-filament-siyah-mavi-mor-1-75mm-1kg"
   ],
-  "discovered_at": "2026-11-27T17:06:46+00:00"
+  "discovered_at": "2026-11-27T23:53:14+00:00"
  },
  "depo3d": {
   "urls": [
@@ -726,6 +726,6 @@
    "https://depo3d.com/r3d-pla-siyah-1-kg-1-75-mm",
    "https://depo3d.com/sunlu-pla-matte-bone-white-1-kg-1-75-mm"
   ],
-  "discovered_at": "2026-11-27T17:06:46+00:00"
+  "discovered_at": "2026-11-27T23:53:14+00:00"
  }
 }
